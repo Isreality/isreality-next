@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname } from 'next/navigation';
 import { useState } from "react";
 // import dnt from "/img/dnt.jpg";
-// import Btn from "../components/Btn.jsx";
+import Btn from "../components/Btn";
 import { Icon } from '@iconify/react';
 
 export default function Navbar() {
@@ -22,7 +22,7 @@ export default function Navbar() {
       
 
       {/* Tab & desktop */}
-      <div className="hidden md:hidden lg:flex lg:flex-wrap top-2 left-4 md:left-60 bg-none md:bg-white justify-between border-b-primary border lg:px-24 md:px-8 py-6 m-0 z-50 items-center">
+      <div className="hidden md:hidden lg:flex lg:flex-wrap top-2 left-4 md:left-60 bg-none md:bg-white justify-between border-b-primary border lg:px-24 md:px-8 py-4 m-0 z-50 items-center">
         <div className="hidden md:hidden lg:flex">
           <Image src="/img/dnt.jpg" alt="Dante" className="rounded-full" width={80} height={80}/>
         </div>
@@ -56,10 +56,7 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          <Link href='/' className="flex flex-row bg-black px-6 py-4 rounded-full items-center gap-3">
-            <p className="text-white text-base">Hire Me</p>
-            <div className="bg-white p-2 rounded-full"><Icon className="text-black rotate-45" icon="prime:arrow-up" width="20" height="20" /></div>
-          </Link>
+          <Btn name="Hire Me"/>
         </div>
 
       </div>
