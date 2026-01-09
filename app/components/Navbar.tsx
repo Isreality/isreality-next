@@ -33,26 +33,26 @@ export default function Navbar() {
             <Link
               href="/"
               className={`${
-                pathname === '/' ? 'text-black font-semibold text-base' : 'text-[#646464] hover:text-primary text-base'
+                pathname === '/' ? 'text-black font-semibold text-xl' : 'text-[#646464] hover:text-primary text-xl'
               }`}
             >
-              Home
+              HOME
             </Link>
             <Link
               href="/about"
               className={`${
-                pathname === '/about' ? 'text-black font-semibold text-base' : 'text-[#646464] hover:text-primary text-base'
+                pathname === '/about' ? 'text-black font-semibold text-xl' : 'text-[#646464] hover:text-primary text-xl'
               }`}
             >
-              About 
+              ABOUT 
             </Link>
             <Link
               href="/works"
               className={`${
-                pathname === '/works' ? 'text-black font-semibold text-base' : 'text-[#646464] hover:text-primary text-base'
+                pathname === '/works' ? 'text-black font-semibold text-xl' : 'text-[#646464] hover:text-primary text-xl'
               }`}
             >
-              My Works
+              MY WORKS
             </Link>
           </nav>
 
