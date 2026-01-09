@@ -48,7 +48,7 @@ export default function Home() {
         </div>
 
         {/* CONTACT */}
-        <div className="bg-white  w-full px-4 md:px-8 lg:px-24 py-16">
+        <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
             {/* Heading */}
             <div className="flex flex-row items-center justify-between">
               <div>
@@ -63,7 +63,11 @@ export default function Home() {
               <div>
                 <Btn name="Let's Talk"/><br/>
               </div>
-            </div>
+            </div><br/>
+
+            <div className="">
+                <Image src="/img/woman.png" alt="customer" className="w-full" width={1000} height={1000} />
+            </div><br/>
 
             {/* Details */}
             <div className="grid grid-cols-2 items-center gap-5">
