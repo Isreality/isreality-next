@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "./components/Navbar"
 import { Icon } from '@iconify/react';
 import Btn from "./components/Btn";
+import Btn2 from "./components/Btn2";
 
 export default function Home() {
   return (
@@ -53,7 +54,7 @@ export default function Home() {
         <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
           <h2 className="uppercase text-black text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl">
             <b className="text-[#646464]">My</b> Expertise
-          </h2><br/>
+          </h2><br/><br/>
 
           {/* Features */}
           <div>
@@ -121,8 +122,23 @@ export default function Home() {
                   </div>  
             </Link>
           </div>
-
         </div>
+
+
+        {/* WORKS */}
+        <div className="bg-black w-full px-4 md:px-8 lg:px-24 py-16">
+          {/* Heading */}
+            <div className="flex flex-row items-center justify-between">
+              <h2 className="uppercase text-white text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl">
+              <b className="text-[#646464]">Selected</b> Works
+              </h2><br/><br/>
+
+              <div>
+                <Btn2 name="See More"/><br/>
+              </div>
+            </div><br/><br/>
+        </div>
+
 
         {/* CONTACT */}
         <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
@@ -140,7 +156,7 @@ export default function Home() {
               <div>
                 <Btn name="Let's Talk"/><br/>
               </div>
-            </div><br/>
+            </div><br/><br/>
 
             <div className="">
                 <Image src="/img/woman.png" alt="customer" className="w-full" width={1000} height={1000} />
