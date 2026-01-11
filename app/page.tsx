@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./components/Navbar"
+import Card from "./components/Card"
 import { Icon } from '@iconify/react';
 import Btn from "./components/Btn";
 import Btn2 from "./components/Btn2";
@@ -134,9 +135,16 @@ export default function Home() {
               </h2><br/><br/>
 
               <div>
-                <Btn2 name="See More"/><br/>
+                <Btn2 name="View All"/><br/>
               </div>
             </div><br/><br/>
+
+            <div className="grid grid-cols-2 gap-5">
+              <Card header="Ounje Ibile" text="Brand Design" image="/img/ounje.png" />
+              <Card header="Ankra" text="Web Development" image="/img/ankra.png"/>
+              <Card header="iGuard" text="UI/UX Design" image="/img/ig.png"/>
+              <Card header="Illustration" text="Illustration" image="/img/kungirl.jpg"/>
+            </div>
         </div>
 
 
