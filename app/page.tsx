@@ -18,13 +18,13 @@ export default function Home() {
             {/* <div className="z-100"><Navbar/></div> */}
 
             {/* Content */}
-            <div className="flex flex-row items-center bg-white -mt-30">
+            <div className="flex flex-col md:flex-col lg:flex-row items-center bg-white -mt-30">
               <div className="flex flex-col items-center md:items-center lg:items-start w-full md:w-full lg:w-[60%] px-4 md:px-20 mt-30 gap-0">
-                  <h2 className="text-black text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-9xl">
+                  <h2 className="text-black text-center md:text-center lg:text-left font-black text-6xl md:text-8xl lg:text-9xl mt-8 md:mt-8 lg:mt-0">
                     ISRAEL AGBAJE
                   </h2><br/>
 
-                  <h1 className={`${plus.className} text-black text-xs md:text-base lg:text-xl text-left w-full font-regular`}>
+                  <h1 className={`${plus.className} text-black text-sm md:text-lg lg:text-xl text-center md:text-center lg:text-left w-full font-regular`}>
                     I am a passionate Product & Brand Designer, Frontend ENGINEER and Illustrator, dedicated to crafting beautiful and functional digital experiences.
                   </h1><br/>
                   
@@ -32,24 +32,25 @@ export default function Home() {
                   <Btn name="SEE MY WORKS"/><br/>
                   
                   {/* STATS */}
-                  <div className="flex flex-col md:flex-col lg:flex-row gap-5 md:gap-5 lg:gap-15">
-                    <div className="flex flex-col text-3xl uppercase">
+                  <div className="flex flex-row gap-10 md:gap-25 lg:gap-15">
+                    <div className="flex flex-col text-2xl md:text-3xl uppercase">
                       <h1 className="text-black font-bold">7+</h1>
                       <p className="text-[#646464] font-light">experience</p>
                     </div>
 
-                    <div className="flex flex-col text-3xl uppercase">
+                    <div className="flex flex-col text-2xl md:text-3xl uppercase">
                       <h1 className="text-black font-bold">50+</h1>
                       <p className="text-[#646464] font-light">clients</p>
                     </div>
 
-                    <div className="flex flex-col text-3xl uppercase">
+                    <div className="flex flex-col text-2xl md:text-3xl uppercase">
                       <h1 className="text-black font-bold">60+</h1>
                       <p className="text-[#646464] font-light">Projects</p>
                     </div>
                   </div>    
               </div>
 
+              {/* Image */}
               <div className="">
                 <Image src="/img/izzy hero.png" alt="Dante" className="" width={1000} height={1000} />
               </div>
