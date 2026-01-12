@@ -21,7 +21,7 @@ export default function Navbar() {
     <div>
       
 
-      {/* Tab & desktop */}
+      {/* Tab & Desktop */}
       <div className="hidden md:hidden lg:flex lg:flex-wrap top-2 left-4 md:left-60 bg-none md:bg-none justify-between lg:px-24 md:px-8 py-4 m-0 z-50 items-center">
         <div className="hidden md:hidden lg:flex">
           <Image src="/img/dnt.jpg" alt="Dante" className="rounded-full" width={60} height={60}/>
