@@ -25,7 +25,7 @@ export default function Home() {
                   </h2><br/>
 
                   <h1 className={`${plus.className} text-black text-sm md:text-lg lg:text-xl text-center md:text-center lg:text-left w-full font-regular`}>
-                    I am a passionate Product & Brand Designer, Frontend ENGINEER and Illustrator, dedicated to crafting beautiful and functional digital experiences.
+                    A Brand Designer, Design Engineer and Illustrator, dedicated to crafting beautiful and functional digital experiences.
                   </h1><br/>
                   
                   {/* Hero Button */}
@@ -50,9 +50,14 @@ export default function Home() {
                   </div>    
               </div>
 
-              {/* Image */}
-              <div className="">
+              {/* Image desktop */}
+              <div className="hidden md:hidden lg:flex">
                 <Image src="/img/izzy hero.png" alt="Dante" className="" width={1000} height={1000} />
+              </div>
+
+              {/* Image tablet and mobile */}
+              <div className="lg:hidden">
+                <Image src="/img/isreality.png" alt="Dante" className="" width={1000} height={1000} />
               </div>
             </div>   
         </div>
@@ -146,7 +151,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-1 lg:grid-cols-2 gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
               <Card header="Ounje Ibile" text="Brand Design" image="/img/ounje.png" />
               <Card header="Ankra" text="Web Development" image="/img/ankra.png"/>
               <Card header="iGuard" text="UI/UX Design" image="/img/ig.png"/>

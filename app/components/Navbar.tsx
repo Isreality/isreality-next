@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <div>
       {/* Mobile */}
-      <div className="lg:hidden flex flex-row justify-between bg-white border-b-primary border-1 items-center px-4 py-4 md:px-8 md:py-6 left-0 w-full">
+      <div className="lg:hidden flex flex-row justify-between bg-white border-b-primary border items-center px-4 py-4 md:px-8 md:py-6 left-0 w-full">
         <div className="lg:hidden items-center">
           <Image src="/img/dnt.jpg" alt="Dante" className="rounded-full" width={40} height={40}/>
         </div>
@@ -29,8 +29,8 @@ export default function Navbar() {
             <button onClick={()=>toggleNavbar()} className="text-black justify-center">{isOpen ? <Icon icon="material-symbols:close" className="fixed text-black font-bold size-5 top-5 z-50 mr-4 right-4 cursor-pointer" width="30" height="30" /> : <Icon icon="ci:hamburger-md" className="text-primary font-bold cursor-pointer" width="30" height="30" />}</button>
               {isOpen &&(
                 <div>
-                  <div className="fixed h-full w-screen right-0 -translate-y-0 transition-all top-0 py-4">
-                    <div className="flex bg-white flex-col absolute inset-x-0 top-0 h-80 p-8 gap-5 z-[100] w-full">
+                  <div className="fixed h-full w-screen right-0 translate-y-0 transition-all top-0 py-4">
+                    <div className="flex bg-white flex-col absolute inset-x-0 top-0 h-80 p-8 gap-5 z-100 w-full">
                       <nav className="flex flex-col gap-5 font-medium">
                         <Link
                           href="/"
