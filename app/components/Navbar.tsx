@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <div>
       {/* Mobile */}
-      <div className="lg:hidden flex flex-row justify-between bg-white border-b-primary border items-center px-4 py-4 md:px-8 md:py-6 left-0 w-full">
+      <div className="lg:hidden flex flex-row justify-between bg-white items-center px-4 py-4 md:px-8 md:py-6 left-0 w-full">
         <div className="lg:hidden items-center">
           <Image src="/img/dnt.jpg" alt="Dante" className="rounded-full" width={40} height={40}/>
         </div>
