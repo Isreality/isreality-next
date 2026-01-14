@@ -177,7 +177,7 @@ export default function Home() {
                 showcasing not only technical expertise but also a keen aesthetic eye. Each collaboration with him was a seamless experience, consistently
                 delivering visually stunning and user-friendly interfaces. I highly recommend his services to anyone seeking a talented and reliable UI/UX professional"'/>
                                     
-              <Testimonial image="" name="Olatunde Samuel" role="LightUp Software Ltd" text='"Israel is very good at what he does. His work ethic is highly commendable and his commitment
+              <Testimonial image="/img/kazeem.jpg" name="Olatunde Samuel" role="LightUp Software Ltd" text='"Israel is very good at what he does. His work ethic is highly commendable and his commitment
                 to satisfy his clients is dependable. This makes working with him a good choice always"'/>
                                         
                                     {/* <Testimonial name="Ogunsiji Damilare" role="CEO, Ogdams Technologies" text='"I had the pleasure of working with Israel on more than 3 projects. His proficiency in design is truly remarkable,
