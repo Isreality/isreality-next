@@ -3,12 +3,12 @@ import path from 'path';
 import Image from 'next/image';
 
 async function getImagePaths() {
-  const imagesDir = path.join(process.cwd(), 'public', 'img', 'brand');
+  const imagesDir = path.join(process.cwd(), 'public', 'img', 'ill');
   const filenames = fs.readdirSync(imagesDir);
-  return filenames.map(name => `/img/brand/${name}`);
+  return filenames.map(name => `/img/ill/${name}`);
 }
 
-export default async function Brand() { 
+export default async function Ill() { 
   const imagePaths = await getImagePaths(); 
 
   return (

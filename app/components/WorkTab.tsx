@@ -1,6 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import WorkCard from "./WorkCard"
 import Brand from "./Brand"
+import Ill from "./Ill"
 // import Btn from "../Btn";
 
 export default function WorkTab() {
@@ -36,9 +37,12 @@ export default function WorkTab() {
         </TabsContent>
 
         <TabsContent value="brand">
-            {/* <Brand src={'/img/brand'}/> */}
+            <Brand/>
         </TabsContent>
-        <TabsContent value="ill">Change your password here.</TabsContent>
+
+        <TabsContent value="ill">
+            <Ill/>
+        </TabsContent>
     </Tabs>
   )
 }

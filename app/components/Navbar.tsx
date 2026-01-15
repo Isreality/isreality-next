@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
 
         <div className="lg:hidden z-50">    
-            <button onClick={()=>toggleNavbar()} className="text-black justify-center">{isOpen ? <Icon icon="material-symbols:close" className="fixed text-black font-bold size-5 top-5 z-50 mr-4 right-4 cursor-pointer" width="30" height="30" /> : <Icon icon="ci:hamburger-md" className="text-primary font-bold cursor-pointer" width="30" height="30" />}</button>
+            <button onClick={()=>toggleNavbar()} className="text-black justify-center">{isOpen ? <Icon icon="material-symbols:close" className="fixed text-black font-bold size-5 top-5 z-50 mr-4 right-4 cursor-pointer" width="30" height="30" /> : <Icon icon="ci:hamburger-md" className="text-black font-bold cursor-pointer" width="30" height="30" />}</button>
               {isOpen &&(
                 <div>
                   <div className="fixed h-full w-screen right-0 translate-y-0 transition-all top-0 py-4">
@@ -58,7 +58,7 @@ export default function Navbar() {
                         </Link>
                       </nav>
 
-                      <Btn name="Hire Me"/>
+                      <Btn name="Hire Me" link="mailto:isrealitycreations@gmail.com"/>
 
                     </div> 
                   </div>
@@ -103,7 +103,7 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          <Btn name="Hire Me"/>
+          <Btn name="Hire Me" link="mailto:isrealitycreations@gmail.com"/>
         </div>
 
       </div>

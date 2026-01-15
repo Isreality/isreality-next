@@ -29,7 +29,7 @@ export default function Home() {
                   </h1><br/>
                   
                   {/* Hero Button */}
-                  <Btn name="SEE MY WORKS"/><br/>
+                  <Btn name="SEE MY WORKS" link="/works"/><br/>
                   
                   {/* STATS */}
                   <div className="flex flex-row gap-10 md:gap-25 lg:gap-15">
@@ -205,7 +205,7 @@ export default function Home() {
                 </h2> 
               </div>
               <div>
-                <Btn name="Let's Talk"/><br/>
+                <Btn name="Let's Talk" link="mailto:isrealitycreations@gmail.com"/><br/>
               </div>
             </div>
 
