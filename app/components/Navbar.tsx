@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from 'next/navigation';
 import { useState } from "react";
-// import dnt from "/img/dnt.jpg";
 import Btn from "../components/Btn";
 import { Icon } from '@iconify/react';
 
@@ -58,7 +57,7 @@ export default function Navbar() {
                         </Link>
                       </nav>
 
-                      <Btn name="Hire Me" link="mailto:isrealitycreations@gmail.com"/>
+                      <Btn name="Let's Talk" link="mailto:isrealitycreations@gmail.com"/>
 
                     </div> 
                   </div>
@@ -103,7 +102,7 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          <Btn name="Hire Me" link="mailto:isrealitycreations@gmail.com"/>
+          <Btn name="Let's Talk" link="mailto:isrealitycreations@gmail.com"/>
         </div>
 
       </div>

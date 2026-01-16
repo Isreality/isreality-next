@@ -5,12 +5,13 @@ interface CardProps {
   header: string;
   text: string;
   image: any;
+  link: any;
 }
 
-export default function Card({ header, text, image }: CardProps) {
+export default function Card({ header, text, image, link }: CardProps) {
   return (
     <div className="card bg-black px-2 py-2 md:py-2 rounded-md overflow-hidden">
-                <Link href="/" target="_blank">
+                <Link href={link} target="_blank">
                     <img className='h-50 md:h-100 w-full object-cover hover:scale-105 rounded-lg' src={image} alt=""></img>
                         <div className="flex flex-row justify-between items-center px-0 md:px-2 py-4 md:py-6">
                             <div className="uppercase">

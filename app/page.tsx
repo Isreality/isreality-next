@@ -14,11 +14,10 @@ export default function Home() {
     <div>
       <main>
         {/* Hero Section */}
-        <div className="gap-0">
-            {/* <div className="z-100"><Navbar/></div> */}
+        <div className="gap-0 ">
 
             {/* Content */}
-            <div className="flex flex-col md:flex-col lg:flex-row items-center bg-white -mt-30">
+            <div className=" flex flex-col md:flex-col lg:flex-row items-center -mt-30 md:-mt-30 lg:-mt-30">
               <div className="flex flex-col items-center md:items-center lg:items-start w-full md:w-full lg:w-[60%] px-4 md:px-20 mt-30 gap-0">
                   <h2 className="text-black text-center md:text-center lg:text-left font-black text-6xl md:text-8xl lg:text-9xl mt-8 md:mt-8 lg:mt-0">
                     ISRAEL AGBAJE
@@ -51,8 +50,8 @@ export default function Home() {
               </div>
 
               {/* Image desktop */}
-              <div className="hidden md:hidden lg:flex">
-                <Image src="/img/izzy hero.png" alt="Dante" className="" width={1000} height={1000} />
+              <div className="hidden md:hidden lg:flex -z-10">
+                <Image src="/img/izzy_hero.png" alt="Dante" className="" width={1000} height={1000} />
               </div>
 
               {/* Image tablet and mobile */}
@@ -61,17 +60,24 @@ export default function Home() {
               </div>
             </div>   
         </div>
+
+        {/* ABOUT */}
+        {/* <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
+          <h1 className={`${plus.className} text-black text-sm md:text-lg lg:text-5xl text-center md:text-center lg:text-left font-regular`}>
+            A Brand Designer, Design Engineer and Illustrator, dedicated to crafting beautiful and functional digital experiences.
+          </h1><br/>
+        </div> */}
         
         {/* SERVICES */}
         <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
-          <h2 className="uppercase mb-4 md:mb-16 text-black text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl">
+          <h2 className="uppercase mb-4 md:mb-16 text-black text-center md:text-center lg:text-center font-black text-4xl md:text-6xl lg:text-7xl">
             <b className="text-[#646464]">My</b> Expertise
           </h2>
 
           {/* Features */}
           <div>
             {/* UI/UX */}
-            <Link href="/" className="bg-black flex flex-col md:flex-col lg:flex-row rounded-lg gap-2 md:gap-1 px-4 md:px-8 py-8 md:py-16 border-b-2 items-center justify-between">
+            <Link href="/works" className="bg-black flex flex-col md:flex-col lg:flex-row rounded-lg gap-2 md:gap-1 px-4 md:px-8 py-8 md:py-16 border-b-2 items-center justify-between">
                   <div className="flex flex-row uppercase text-white text-3xl md:text-5xl w-full md:w-full lg:w-[90%] mb-2 md:mb-2 lg:mb-0">
                       <h2 className="font-black">01.</h2>    
                       <p className="font-light">UI/UX Design</p>
@@ -88,7 +94,7 @@ export default function Home() {
             </Link>
 
             {/* Web */}
-            <Link href="/" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-4 md:px-8 py-6 md:py-16 border-b-2 items-center justify-between">
+            <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-4 md:px-8 py-6 md:py-16 border-b-2 items-center justify-between">
                   <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-full mb-2 md:mb-2 lg:mb-0">
                       <h2 className="font-black">02.</h2>    
                       <p className="font-light">WEB DEVELOPMENT</p>
@@ -104,7 +110,7 @@ export default function Home() {
             </Link>
 
             {/* Brand Design */}
-            <Link href="/" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-6 md:px-8 py-4 md:py-16 border-b-2 items-center justify-between">
+            <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-6 md:px-8 py-4 md:py-16 border-b-2 items-center justify-between">
                   <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-[90%] mb-2 md:mb-2 lg:mb-0">
                       <h2 className="font-black">03.</h2>    
                       <p className="font-light">Brand Design</p>
@@ -120,7 +126,7 @@ export default function Home() {
             </Link>
 
             {/* Illustration */}
-            <Link href="/" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-4 md:px-8 py-6 md:py-16 border-b-2 items-center justify-between">
+            <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-4 md:px-8 py-6 md:py-16 border-b-2 items-center justify-between">
                   <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-full mb-2 md:mb-2 lg:mb-0">
                       <h2 className="font-black">04.</h2>    
                       <p className="font-light">Illustration</p>
@@ -147,15 +153,15 @@ export default function Home() {
               </h2>
 
               <div className="mb-4 md:mb-16">
-                <Btn2 name="View All"/><br/>
+                <Btn2 name="View All" link="/works"/><br/>
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
-              <Card header="Ounje Ibile" text="Brand Design" image="/img/ounje.png" />
-              <Card header="Ankra" text="Web Development" image="/img/ankra.png"/>
-              <Card header="iGuard" text="UI/UX Design" image="/img/ig.png"/>
-              <Card header="Illustration" text="Illustration" image="/img/kungirl.jpg"/>
+              <Card header="Ounje Ibile" text="Brand Design" image="/img/ounje.png" link={'/works'}/>
+              <Card header="Ankra" text="Web Development" image="/img/ankra.png" link={'https://www.ankra.vercel.app'}/>
+              <Card header="iGuard" text="UI/UX Design" image="/img/ig.png" link={'https://www.behance.net/gallery/224472665/iGuard'}/>
+              <Card header="Illustration" text="Illustration" image="/img/kungirl.jpg" link={'/works'}/>
             </div>
         </div>
 

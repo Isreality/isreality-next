@@ -1,10 +1,15 @@
 import Link from "next/link";
 import { Icon } from '@iconify/react';
 
-export default function Btn({name}: { name: string }) {
+interface BtnProps {
+  name: string;
+  link: any;
+}
+
+export default function Btn({ name, link }: BtnProps) {
   return (
     // <div className="bg-primary hover:bg-black lg:w-32 py-6 px-20 rounded-md border-fa  cursor-pointer text-white text-xs md:text-base font-medium">{name}</div>
-    <Link href='/' className="flex flex-row bg-white px-6 py-4 rounded-full items-center gap-3">
+    <Link href={link} className="flex flex-row bg-white px-6 py-4 rounded-full items-center gap-3">
         <p className="text-black text-xl uppercase">{name}</p>
             <div className="bg-black p-2 rounded-full"><Icon className="text-white rotate-45 hover:rotate-90" icon="prime:arrow-up" width="20" height="20" /></div>
     </Link>
