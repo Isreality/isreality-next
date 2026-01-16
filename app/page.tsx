@@ -28,7 +28,10 @@ export default function Home() {
                   </h1><br/>
                   
                   {/* Hero Button */}
-                  <Btn name="SEE MY WORKS" link="/works"/><br/>
+                  <div className="flex flex-row items-center gap-2">
+                    <Btn name="Design CV" link="/works"/>
+                    <Btn2 name="Frontend CV" link="/works"/>
+                  </div><br/>
                   
                   {/* STATS */}
                   <div className="flex flex-row gap-10 md:gap-25 lg:gap-15">
