@@ -29,8 +29,8 @@ export default function Home() {
                   
                   {/* Hero Button */}
                   <div className="flex flex-row items-center gap-2">
-                    <Btn name="Design CV" link="/works"/>
-                    <Btn2 name="Frontend CV" link="/works"/>
+                    <Btn name="Design CV" link="https://drive.google.com/file/d/1jociKuMGT0lWljKHCTgygnjgahaN187Y/view?usp=drive_link"/>
+                    <Btn2 name="Frontend CV" link="https://drive.google.com/file/d/1fKhZhuQmWcHQ0z3C5sIBNRShanyHvwhx/view?usp=drive_link"/>
                   </div><br/>
                   
                   {/* STATS */}

@@ -8,12 +8,12 @@ export default function About() {
   return (
     <div>
       {/* ABOUT */}
-      <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
-        <h1 className={`${plus.className} text-black text-sm md:text-lg lg:text-4xl/16 text-center md:text-center lg:text-left font-medium`}>
+      <div className="bg-white w-full px-2 md:px-8 lg:px-24 py-16">
+        <h1 className={`${plus.className} text-black text-base md:text-2xl lg:text-4xl/16 text-center md:text-center lg:text-left font-medium`}>
           I’m a UI/UX Designer, Brand Creative, Frontend Engineer, and Illustrator who enjoys making things look good and work well. I design smooth interfaces, build brands with character, and write code that brings ideas to life on the web.
         </h1><br/>
 
-        <h1 className={`${plus.className} text-[#646464] text-sm md:text-lg lg:text-4xl/16 text-center md:text-center lg:text-left font-medium`}>
+        <h1 className={`${plus.className} text-[#646464] text-base md:text-2xl lg:text-4xl/16 text-center md:text-center lg:text-left font-medium`}>
           When I’m not designing or coding, you’ll probably find me playing basketball or football, listening to music, sketching random ideas, or just catching cruise.
         </h1>
       </div>
@@ -129,7 +129,7 @@ export default function About() {
       
             <div className="">
               <h2 className="uppercase text-2xl md:text-3xl text-black font-black mb-0 md:mb-2">Figma</h2>
-              <p className="uppercase text-xl md:text-2xl text-black font-light">+2348140082953</p>
+              <p className="uppercase text-xl md:text-2xl text-[#646464] font-light">Product Design</p>
             </div>  
           </div>
 
@@ -141,7 +141,7 @@ export default function About() {
       
             <div className="">
               <h2 className="uppercase text-2xl md:text-3xl text-black font-black mb-0 md:mb-2">Github</h2>
-              <p className="text-xl md:text-2xl text-black font-light">isrealitycreations@gmail.com</p>
+              <p className="text-xl md:text-2xl text-[#646464] font-light">Web Development</p>
             </div>  
           </div>
 
@@ -153,7 +153,7 @@ export default function About() {
       
             <div className="">
               <h2 className="uppercase text-2xl md:text-3xl text-black font-black mb-0 md:mb-2">Photoshop</h2>
-              <p className="text-xl md:text-2xl text-black font-light">isrealitycreations@gmail.com</p>
+              <p className="text-xl md:text-2xl text-[#646464] font-light">Brand Design</p>
             </div>  
           </div>
 
@@ -165,7 +165,7 @@ export default function About() {
       
             <div className="">
               <h2 className="uppercase text-2xl md:text-3xl text-black font-black mb-0 md:mb-2">Illustrator</h2>
-              <p className="text-xl md:text-2xl text-black font-light">isrealitycreations@gmail.com</p>
+              <p className="text-xl md:text-2xl text-[#646464] font-light">illustration</p>
             </div>  
           </div>
 
