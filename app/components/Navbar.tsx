@@ -79,7 +79,7 @@ export default function Navbar() {
             <Link
               href="/"
               className={`${
-                pathname === '/' ? 'text-black font-semibold text-xl' : 'text-[#646464] hover:text-primary text-xl'
+                pathname === '/' ? 'text-black font-semibold text-2xl' : 'text-[#646464] hover:text-primary text-2xl'
               }`}
             >
               HOME
@@ -87,7 +87,7 @@ export default function Navbar() {
             <Link
               href="/about"
               className={`${
-                pathname === '/about' ? 'text-black font-semibold text-xl' : 'text-[#646464] hover:text-primary text-xl'
+                pathname === '/about' ? 'text-black font-semibold text-2xl' : 'text-[#646464] hover:text-primary text-2xl'
               }`}
             >
               ABOUT 
@@ -95,7 +95,7 @@ export default function Navbar() {
             <Link
               href="/works"
               className={`${
-                pathname === '/works' ? 'text-black font-semibold text-xl' : 'text-[#646464] hover:text-primary text-xl'
+                pathname === '/works' ? 'text-black font-semibold text-2xl' : 'text-[#646464] hover:text-primary text-2xl'
               }`}
             >
               MY WORKS

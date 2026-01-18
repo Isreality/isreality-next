@@ -65,11 +65,11 @@ export default function Home() {
         </div>
 
         {/* ABOUT */}
-        {/* <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
-          <h1 className={`${plus.className} text-black text-sm md:text-lg lg:text-5xl text-center md:text-center lg:text-left font-regular`}>
-            A Brand Designer, Design Engineer and Illustrator, dedicated to crafting beautiful and functional digital experiences.
+        <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
+          <h1 className={`${plus.className} text-black text-base md:text-2xl lg:text-4xl/16 text-center md:text-center lg:text-left font-medium`}>
+            A Brand Designer, Design Engineer and Illustrator, dedicated to crafting beautiful and functional digital experiences. I design smooth interfaces, build brands with character, and write code that brings ideas to life on the web.
           </h1><br/>
-        </div> */}
+        </div>
         
         {/* SERVICES */}
         <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">

@@ -1,5 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Icon } from '@iconify/react';
+import "../globals.css";
 import { plus } from '../font';
 import Experience from "../components/Experience";
 
@@ -7,8 +9,35 @@ import Experience from "../components/Experience";
 export default function About() {
   return (
     <div>
+      <div className="bg-white max-h-100 md:max-h-180 lg:max-h-200 overflow-hidden">
+      
+        {/* Content */}
+        <div className="">
+          <div className="w-full px-4 md:px-20 mt-10 gap-0">
+            <h2 className="text-black text-center font-black text-6xl md:text-[120px] lg:text-[220px] mt-8 md:mt-8 lg:mt-0">
+              ISRAEL AGBAJE
+            </h2>
+
+            <h2 className= " text-center text-transparent text-outline-2 font-black text-6xl md:text-[120px] lg:text-[220px] mt-2 md:mt-4 lg:mt-0">
+              ISRAEL AGBAJE
+            </h2><br/>
+  
+          </div>       
+      
+          {/* Image desktop and tablet */}
+          <div className="hidden  md:grid justify-items-center">
+            <Image src="/img/isreality.png" alt="Dante" className="-mt-40 md:-mt-60 lg:-mt-120" width={1000} height={700} />
+          </div>
+
+          {/* Image tablet and mobile */}
+          <div className="grid justify-items-center md:hidden">
+            <Image src="/img/isreality.png" alt="Dante" className="-mt-40 md:-mt-60 lg:-mt-120" width={400} height={400} />
+          </div>
+        </div>   
+      </div>
+
       {/* ABOUT */}
-      <div className="bg-white w-full px-2 md:px-8 lg:px-24 py-16">
+      <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-6 md:py-16">
         <h1 className={`${plus.className} text-black text-base md:text-2xl lg:text-4xl/16 text-center md:text-center lg:text-left font-medium`}>
           I’m a UI/UX Designer, Brand Creative, Frontend Engineer, and Illustrator who enjoys making things look good and work well. I design smooth interfaces, build brands with character, and write code that brings ideas to life on the web.
         </h1><br/>
@@ -18,9 +47,14 @@ export default function About() {
         </h1>
       </div>
 
+      {/* IMAGE */}
+      {/* <div className="bg-[url('/img/izzy3.jpg')] bg-center bg-cover flex items-center h-50 md:h-140">
+        
+      </div> */}
+
       {/* EXPERIENCE */}
-      <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
-        <h2 className="uppercase mb-4 md:mb-16 text-black text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl">
+      <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-6 md:py-16 lg:py-16">
+        <h2 className="uppercase mb-4 md:mb-8 text-black text-center md:text-center lg:text-center font-black text-4xl md:text-6xl lg:text-7xl">
           <b className="text-[#646464]">My</b> Experience
         </h2>
       
@@ -38,8 +72,8 @@ export default function About() {
         <Experience title="Design Intern" name="Next Layers Concept" date="Aug 2017 - Aug 2019"/>
       </div>
 
-      {/* SERVICES */}
-      <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
+      {/* PROCESS */}
+      <div className="bg-white w-full px-2 md:px-8 lg:px-24 py-4 md:py-8 lg:py-16">
         <h2 className="uppercase mb-4 md:mb-16 text-black text-center md:text-center lg:text-center font-black text-4xl md:text-6xl lg:text-7xl">
           <b className="text-[#646464]">My</b> Process
         </h2>
@@ -60,8 +94,8 @@ export default function About() {
           </div>
 
           {/* Ideation */}
-          <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 lg:gap-80 px-4 md:px-6 py-8 md:py-16 border-b-2 items-center justify-between">
-            <div className="flex flex-row uppercase items-start text-left text-black text-3xl md:text-5xl mb-2 md:mb-2 lg:mb-0">
+          <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 lg:gap-80 px-4 md:px-6 py-4 md:py-8 lg:py-16 border-b-2 items-start md:items-start lg:items-center justify-between">
+            <div className="flex flex-row uppercase text-black text-3xl md:text-5xl mb-2 md:mb-2 lg:mb-0">
               <h2 className="font-black">02.</h2>    
               <p className="font-light">Ideation</p>
             </div>
@@ -73,7 +107,7 @@ export default function About() {
           </div>
 
           {/* Feedback */}
-          <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 lg:gap-85 px-4 md:px-6 py-8 md:py-16 border-b-2 items-center justify-between">
+          <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 lg:gap-85 px-4 md:px-6 py-4 md:py-8 lg:py-16 border-b-2 items-start md:items-start lg:items-center justify-between">
             <div className="flex flex-row uppercase text-black text-3xl md:text-5xl mb-2 md:mb-2 lg:mb-0">
               <h2 className="font-black">03.</h2>    
               <p className="font-light">Design</p>
@@ -86,7 +120,7 @@ export default function About() {
           </div>
 
           {/* Testing */}
-          <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 lg:gap-60 px-4 md:px-6 py-8 md:py-16 border-b-2 items-center justify-between">
+          <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 lg:gap-60 px-4 md:px-6 py-4 md:py-8 lg:py-16 border-b-2 items-start md:items-start lg:items-center justify-between">
             <div className="flex flex-row uppercase text-black text-3xl md:text-5xl mb-2 md:mb-2 lg:mb-0">
               <h2 className="font-black">04.</h2>    
               <p className="font-light">Development</p>
@@ -99,7 +133,7 @@ export default function About() {
           </div>
 
           {/* Launch */}
-          <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 lg:gap-10 px-4 md:px-6 py-8 md:py-16 items-center justify-between">
+          <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 lg:gap-10 px-4 md:px-6 py-4 md:py-8 lg:py-16 items-center justify-between">
             <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full mb-2 md:mb-2 lg:mb-0">
               <h2 className="font-black">05.</h2>    
               <p className="font-light">Launch & Delivery</p>
@@ -114,7 +148,7 @@ export default function About() {
       </div>
 
       {/* Tech Stack */}
-      <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
+      <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-4 md:py-8 lg:py-16">
         <h2 className="uppercase mb-4 md:mb-16 text-black text-center md:text-center lg:text-center font-black text-4xl md:text-6xl lg:text-7xl">
           <b className="text-[#646464]">Tech</b> Stack
         </h2>
@@ -128,8 +162,8 @@ export default function About() {
             </div>
       
             <div className="">
-              <h2 className="uppercase text-2xl md:text-3xl text-black font-black mb-0 md:mb-2">Figma</h2>
-              <p className="uppercase text-xl md:text-2xl text-[#646464] font-light">Product Design</p>
+              <h2 className="uppercase text-2xl md:text-3xl text-black font-normal mb-0 md:mb-2">Figma</h2>
+              <p className="text-xl md:text-2xl text-[#646464] font-light">Product Design</p>
             </div>  
           </div>
 
@@ -140,7 +174,7 @@ export default function About() {
             </div>
       
             <div className="">
-              <h2 className="uppercase text-2xl md:text-3xl text-black font-black mb-0 md:mb-2">Github</h2>
+              <h2 className="uppercase text-2xl md:text-3xl text-black font-normal mb-0 md:mb-2">Github</h2>
               <p className="text-xl md:text-2xl text-[#646464] font-light">Web Development</p>
             </div>  
           </div>
@@ -152,7 +186,7 @@ export default function About() {
             </div>
       
             <div className="">
-              <h2 className="uppercase text-2xl md:text-3xl text-black font-black mb-0 md:mb-2">Photoshop</h2>
+              <h2 className="uppercase text-2xl md:text-3xl text-black font-normal mb-0 md:mb-2">Photoshop</h2>
               <p className="text-xl md:text-2xl text-[#646464] font-light">Brand Design</p>
             </div>  
           </div>
@@ -164,8 +198,8 @@ export default function About() {
             </div>
       
             <div className="">
-              <h2 className="uppercase text-2xl md:text-3xl text-black font-black mb-0 md:mb-2">Illustrator</h2>
-              <p className="text-xl md:text-2xl text-[#646464] font-light">illustration</p>
+              <h2 className="uppercase text-2xl md:text-3xl text-black font-normal mb-0 md:mb-2">Illustrator</h2>
+              <p className="text-xl md:text-2xl text-[#646464] font-light">Illustration</p>
             </div>  
           </div>
 
