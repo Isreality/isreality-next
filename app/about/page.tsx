@@ -18,7 +18,7 @@ export default function About() {
               ISRAEL AGBAJE
             </h2>
 
-            <h2 className= " text-center text-transparent text-outline-2 font-black text-6xl md:text-[120px] lg:text-[220px] mt-2 md:mt-4 lg:mt-0">
+            <h2 className= " text-center text-transparent text-outline-1 font-black text-6xl md:text-[120px] lg:text-[220px] mt-2 md:mt-4 lg:mt-0">
               ISRAEL AGBAJE
             </h2><br/>
   
