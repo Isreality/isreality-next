@@ -11,16 +11,16 @@ interface CardProps {
 
 export default function Testimonial({ name, role, text, image }: CardProps) {
   return (
-    <div className="card bg-[#121111] px-8 py-8 md:py-16 rounded-md grid justify-items-start">
-        <div className="flex justify-start items-center gap-3">
+    <div className="card bg-[#121111] px-8 py-8 md:py-12 rounded-md grid justify-items-start">
+        <div className="flex justify-start items-center gap-3 mb-0 md:mb-4">
             <img className='h-20 w-20 rounded-full object-cover' src={image} alt=""></img>
             <div className="grid justify-items-start">
-                <p className="uppercase text-white text-left text-base md:text-xl font-bold">{name}</p>
+                <p className="uppercase text-white text-left text-base md:text-2xl font-bold">{name}</p>
                 <p className="uppercase text-white text-left text-base md:text-xl font-light">{role}</p> 
             </div>                    
-        </div><br/>
+        </div>
         
-        <p className={`${plus.className} text-white text-sm md:text-base text-left md:text-justify`}>{text}</p>                   
+        <p className={`${plus.className} text-white text-sm md:text-base text-left md:text-justify font-light`}>{text}</p>                   
     </div>
   )
 }

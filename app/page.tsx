@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import Link from "next/link";
 import "./globals.css";
@@ -9,6 +11,7 @@ import Testimonial from "./components/Testimonial";
 import Btn from "./components/Btn";
 import Btn2 from "./components/Btn2";
 import { Fade } from "react-awesome-reveal";
+import CountUp from 'react-countup';
 
 export default function Home() {
   return (
@@ -37,18 +40,18 @@ export default function Home() {
                   
                   {/* STATS */}
                   <div className="flex flex-row gap-10 md:gap-25 lg:gap-15">
-                    <div className="flex flex-col text-2xl md:text-3xl uppercase">
-                      <h1 className="text-black font-bold">7+</h1>
+                    <div className="flex flex-col text-2xl md:text-3xl text-center md:text-center lg:text-left uppercase">
+                      <h1 className="text-black font-bold"><CountUp start={0} end={7} duration={8}/>+</h1>
                       <p className="text-[#646464] font-light">experience</p>
                     </div>
 
-                    <div className="flex flex-col text-2xl md:text-3xl uppercase">
-                      <h1 className="text-black font-bold">50+</h1>
+                    <div className="flex flex-col text-2xl md:text-3xl text-center md:text-center lg:text-left uppercase">
+                      <h1 className="text-black font-bold"><CountUp start={0} end={50} duration={8}/>+</h1>
                       <p className="text-[#646464] font-light">clients</p>
                     </div>
 
-                    <div className="flex flex-col text-2xl md:text-3xl uppercase">
-                      <h1 className="text-black font-bold">60+</h1>
+                    <div className="flex flex-col text-2xl md:text-3xl text-center md:text-center lg:text-left uppercase">
+                      <h1 className="text-black font-bold"><CountUp start={0} end={60} duration={8}/>+</h1>
                       <p className="text-[#646464] font-light">Projects</p>
                     </div>
                   </div>  
@@ -182,7 +185,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
               <Fade triggerOnce>
-                <Card header="Ounje Ibile (In Progress)" text="Brand Design" image="/img/ounje.png" link={'/works'}/>
+                <Card header="Ounje Ibile" text="Brand Design" image="/img/ounje.png" link={'/works'}/>
                 <Card header="Ankra" text="Web Development" image="/img/ankra.png" link={'https://www.ankra.vercel.app'}/>
                 <Card header="iGuard" text="UI/UX Design" image="/img/ig.png" link={'https://www.behance.net/gallery/224472665/iGuard'}/>
                 <Card header="Illustration" text="Illustration" image="/img/kungirl.jpg" link={'/works'}/>
@@ -209,7 +212,7 @@ export default function Home() {
                 showcasing not only technical expertise but also a keen aesthetic eye. Each collaboration with him was a seamless experience, consistently
                 delivering visually stunning and user-friendly interfaces. I highly recommend his services to anyone seeking a talented and reliable UI/UX professional"'/>
                                     
-              <Testimonial image="/img/kazeem.jpg" name="Olatunde Samuel" role="LightUp Software Ltd" text='"Israel is very good at what he does. His work ethic is highly commendable and his commitment
+              <Testimonial image=".." name="Olatunde Samuel" role="LightUp Software Ltd" text='"Israel is very good at what he does. His work ethic is highly commendable and his commitment
                 to satisfy his clients is dependable. This makes working with him a good choice always"'/>
                                         
                                     {/* <Testimonial name="Ogunsiji Damilare" role="CEO, Ogdams Technologies" text='"I had the pleasure of working with Israel on more than 3 projects. His proficiency in design is truly remarkable,
