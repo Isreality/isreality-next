@@ -20,9 +20,9 @@ export default function Navbar() {
     <div>
       {/* Mobile */}
       <div className="lg:hidden flex flex-row justify-between bg-white items-center px-4 py-4 md:px-8 md:py-6 left-0 w-full">
-        <div className="lg:hidden items-center">
+        <Link href="/" className="lg:hidden items-center">
           <Image src="/img/dnt.jpg" alt="Dante" className="rounded-full" width={40} height={40}/>
-        </div>
+        </Link>
 
         <div className="lg:hidden z-50">    
             <button onClick={()=>toggleNavbar()} className="text-black justify-center">{isOpen ? <Icon icon="material-symbols:close" className="fixed text-black font-bold size-5 top-5 z-50 mr-4 right-4 cursor-pointer" width="30" height="30" /> : <Icon icon="ci:hamburger-md" className="text-black font-bold cursor-pointer" width="30" height="30" />}</button>
@@ -69,9 +69,9 @@ export default function Navbar() {
 
       {/* Tab & Desktop */}
       <div className="hidden md:hidden lg:flex lg:flex-wrap top-2 left-4 md:left-60 bg-none md:bg-none justify-between lg:px-24 md:px-16 py-4 m-0 z-50 items-center">
-        <div className="hidden md:hidden lg:flex">
+        <Link href="/" className="hidden md:hidden lg:flex">
           <Image src="/img/dnt.jpg" alt="Dante" className="rounded-full" width={60} height={60}/>
-        </div>
+        </Link>
 
         <div className="hidden md:hidden lg:flex flex-row gap-80 items-center">
           <nav className="flex flex-row gap-10 font-medium">

@@ -17,7 +17,7 @@ export default function WorkTab() {
 
         <TabsContent value="ui">
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-2 md:gap-5">
-                <Fade direction="up" triggerOnce cascade damping={0.3}>
+                <Fade direction="up" triggerOnce cascade damping={0.1}>
                     <WorkCard link={'https://www.behance.net/gallery/224472665/iGuard'} header="iGuard" text="A crypto wallet designed to offer users an intuitive, secure and seamless experience in managing cryptocurrency assets." image="/img/ig.png"/>
                     <WorkCard link={'https://www.behance.net/gallery/158520391/Ankra-Case-Study'} header="Ankra" text="A website that allows customers to find tailors within their vicinity, book appointments with them, choose the design they desire from the site or anywhere else and get it delivered to their doorstep." image="/img/ankra.png"/>
                     <WorkCard link={'https://www.behance.net/gallery/176343673/Teamify'} header="Teamify" text="A web-based dashboard which serves as a centralized platform that enables team leaders, managers, and stakeholders to efficiently monitor, analyze, and optimize team performance, tasks, and collaboration in real-time" image="/img/teamify.png"/>
@@ -32,7 +32,7 @@ export default function WorkTab() {
 
         <TabsContent value="web">
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-5">
-                <Fade direction="up" triggerOnce cascade damping={0.3}>
+                <Fade direction="up" triggerOnce cascade damping={0.1}>
                     <WorkCard link={'https://www.ankra.vercel.app'} header="Ankra" text="A website that allows customers to find tailors within their vicinity, book appointments with them, choose the design they desire from the site or anywhere else and get it delivered to their doorstep." image="/img/ankra.png"/>
                     <WorkCard link={'https://izzy-hub.vercel.app/'} header="Izzy Hub" text="A website that provides a nurturing and inclusive learning environment which empowers students to reach their full potential academically." image="/img/hub.JPG"/>
                     <WorkCard link={'https://livestock-mgt.vercel.app'} header="Livestock-Watch" text="A web app that provides detailed health reports to help you make informed decisions about your livestock, identify trends and prevent future health issues." image="/img/livestock.jpg"/>
