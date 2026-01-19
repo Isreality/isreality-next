@@ -11,7 +11,7 @@ interface ExpProps {
 export default function Btn({ title, name, date}: ExpProps) {
   return (
     <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-0 md:gap-0 lg:gap-0 px-2 md:px-2 py-4 md:py-8 border-b items-start md:items-start lg:items-center justify-between">
-        <div className="text-black mb-2 md:mb-2 lg:mb-0">
+        <div className="text-black mb-0 md:mb-2 lg:mb-0">
             <h2 className="uppercase font-normal text-2xl md:text-4xl">{title}</h2>    
             <p className={`${plus.className} font-normal text-base md:text-2xl text-black`}>{name}</p>
         </div>

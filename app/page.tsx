@@ -8,6 +8,7 @@ import { Icon } from '@iconify/react';
 import Testimonial from "./components/Testimonial";
 import Btn from "./components/Btn";
 import Btn2 from "./components/Btn2";
+import { Fade } from "react-awesome-reveal";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
             {/* Content */}
             <div className=" flex flex-col md:flex-col lg:flex-row items-center -mt-30 md:-mt-30 lg:-mt-30">
               <div className="flex flex-col items-center md:items-center lg:items-start w-full md:w-full lg:w-[60%] px-4 md:px-20 mt-30 gap-0">
+                <Fade direction="up" triggerOnce cascade damping={0.1}>
                   <h2 className="text-black text-center md:text-center lg:text-left font-black text-6xl md:text-8xl lg:text-9xl mt-8 md:mt-8 lg:mt-0">
                     ISRAEL AGBAJE
                   </h2><br/>
@@ -49,128 +51,145 @@ export default function Home() {
                       <h1 className="text-black font-bold">60+</h1>
                       <p className="text-[#646464] font-light">Projects</p>
                     </div>
-                  </div>    
+                  </div>  
+                </Fade>
+                      
               </div>
 
               {/* Image desktop */}
               <div className="hidden md:hidden lg:flex -z-10">
-                <Image src="/img/izzy_hero.png" alt="Dante" className="" width={1000} height={1000} />
+                <Fade direction="right" triggerOnce><Image src="/img/izzy_hero.png" alt="Dante" className="" width={1000} height={1000} /></Fade>
               </div>
+              
 
               {/* Image tablet and mobile */}
               <div className="lg:hidden">
-                <Image src="/img/isreality.png" alt="Dante" className="" width={1000} height={1000} />
+                <Fade direction="up" triggerOnce><Image src="/img/isreality.png" alt="Dante" className="" width={1000} height={1000} /></Fade>
               </div>
+              
+
             </div>   
         </div>
 
         {/* ABOUT */}
-        <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
+        <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-6 md:py-16 lg:py-16">
           <h1 className={`${plus.className} text-black text-base md:text-2xl lg:text-4xl/16 text-center md:text-center lg:text-left font-medium`}>
             A Brand Designer, Design Engineer and Illustrator, dedicated to crafting beautiful and functional digital experiences. I design smooth interfaces, build brands with character, and write code that brings ideas to life on the web.
-          </h1><br/>
+          </h1>
         </div>
         
         {/* SERVICES */}
-        <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
-          <h2 className="uppercase mb-4 md:mb-16 text-black text-center md:text-center lg:text-center font-black text-4xl md:text-6xl lg:text-7xl">
-            <b className="text-[#646464]">My</b> Expertise
-          </h2>
-
+        <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-6 md:py-16 lg:py-16">
+          <Fade direction="up" triggerOnce>
+            <h2 className="uppercase mb-4 md:mb-16 text-black text-center md:text-center lg:text-center font-black text-4xl md:text-6xl lg:text-7xl">
+              <b className="text-[#646464]">My</b> Expertise
+            </h2>
+          </Fade>
+          
+          
           {/* Features */}
           <div>
-            {/* UI/UX */}
-            <Link href="/works" className="bg-black flex flex-col md:flex-col lg:flex-row rounded-lg gap-2 md:gap-1 px-4 md:px-8 py-8 md:py-16 border-b-2 items-center justify-between">
-                  <div className="flex flex-row uppercase text-white text-3xl md:text-5xl w-full md:w-full lg:w-[90%] mb-2 md:mb-2 lg:mb-0">
-                      <h2 className="font-black">01.</h2>    
-                      <p className="font-light">UI/UX Design</p>
-                  </div>
+            <Fade direction="up" triggerOnce cascade damping={0.3}>
+              {/* UI/UX */}
+              <Link href="/works" className="bg-black flex flex-col md:flex-col lg:flex-row rounded-lg gap-2 md:gap-1 px-4 md:px-8 py-8 md:py-16 border-b-2 items-center justify-between">
+                    <div className="flex flex-row uppercase text-white text-3xl md:text-5xl w-full md:w-full lg:w-[90%] mb-2 md:mb-2 lg:mb-0">
+                        <h2 className="font-black">01.</h2>    
+                        <p className="font-light">UI/UX Design</p>
+                    </div>
 
-                  <div className="">
-                    <p className={`${plus.className} text-sm md:text-xl text-white w-full md:w-full lg:w-[80%] font-light`}>
-                      Focus on creating visually appealing interfaces that delights users through wireframing, prototyping, and user testing to deliver a seamless user experience.</p>
-                  </div>
+                    <div className="">
+                      <p className={`${plus.className} text-sm md:text-xl text-white w-full md:w-full lg:w-[80%] font-light`}>
+                        Focus on creating visually appealing interfaces that delights users through wireframing, prototyping, and user testing to deliver a seamless user experience.</p>
+                    </div>
 
-                  <div className="hidden md:hidden lg:flex bg-white p-2 rounded-full">
-                    <Icon className="text-black rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="50" height="50" />
-                  </div>  
-            </Link>
+                    <div className="hidden md:hidden lg:flex bg-white p-2 rounded-full">
+                      <Icon className="text-black rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="50" height="50" />
+                    </div>  
+              </Link>
 
-            {/* Web */}
-            <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-4 md:px-8 py-6 md:py-16 border-b-2 items-center justify-between">
-                  <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-full mb-2 md:mb-2 lg:mb-0">
-                      <h2 className="font-black">02.</h2>    
-                      <p className="font-light">WEB DEVELOPMENT</p>
-                  </div>
+              {/* Web */}
+              <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-4 md:px-8 py-6 md:py-16 border-b-2 items-center justify-between">
+                    <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-full mb-2 md:mb-2 lg:mb-0">
+                        <h2 className="font-black">02.</h2>    
+                        <p className="font-light">WEB DEVELOPMENT</p>
+                    </div>
 
-                  <div className="">
-                    <p className={`${plus.className} text-sm md:text-xl text-black w-full md:w-full lg:w-[80%] font-regular`}>Create visually stunning and user-friendly websites and responsive web applications using modern technologies like HTML, CSS, JavaScript(React & Next Js) and Wordpress.</p>
-                  </div>
+                    <div className="">
+                      <p className={`${plus.className} text-sm md:text-xl text-black w-full md:w-full lg:w-[80%] font-regular`}>Create visually stunning and user-friendly websites and responsive web applications using modern technologies like HTML, CSS, JavaScript(React & Next Js) and Wordpress.</p>
+                    </div>
 
-                  <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
-                    <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="50" height="50" />
-                  </div>  
-            </Link>
+                    <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
+                      <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="50" height="50" />
+                    </div>  
+              </Link>
 
-            {/* Brand Design */}
-            <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-6 md:px-8 py-4 md:py-16 border-b-2 items-center justify-between">
-                  <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-[90%] mb-2 md:mb-2 lg:mb-0">
-                      <h2 className="font-black">03.</h2>    
-                      <p className="font-light">Brand Design</p>
-                  </div>
+              {/* Brand Design */}
+              <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-6 md:px-8 py-4 md:py-16 border-b-2 items-center justify-between">
+                    <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-[90%] mb-2 md:mb-2 lg:mb-0">
+                        <h2 className="font-black">03.</h2>    
+                        <p className="font-light">Brand Design</p>
+                    </div>
 
-                  <div className="">
-                    <p className={`${plus.className} text-sm md:text-xl text-black w-full md:w-full lg:w-[80%] font-regular`}>Design unique logos and graphics that reflect the essence of your brand, ensuring it maintains a visually appealing image across all digital touchpoints.</p>
-                  </div>
+                    <div className="">
+                      <p className={`${plus.className} text-sm md:text-xl text-black w-full md:w-full lg:w-[80%] font-regular`}>Design unique logos and graphics that reflect the essence of your brand, ensuring it maintains a visually appealing image across all digital touchpoints.</p>
+                    </div>
 
-                  <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
-                    <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="50" height="50" />
-                  </div>  
-            </Link>
+                    <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
+                      <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="50" height="50" />
+                    </div>  
+              </Link>
 
-            {/* Illustration */}
-            <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-4 md:px-8 py-6 md:py-16 border-b-2 items-center justify-between">
-                  <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-full mb-2 md:mb-2 lg:mb-0">
-                      <h2 className="font-black">04.</h2>    
-                      <p className="font-light">Illustration</p>
-                  </div>
+              {/* Illustration */}
+              <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-4 md:px-8 py-6 md:py-16 items-center justify-between">
+                    <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-full mb-2 md:mb-2 lg:mb-0">
+                        <h2 className="font-black">04.</h2>    
+                        <p className="font-light">Illustration</p>
+                    </div>
 
-                  <div className="">
-                    <p className={`${plus.className} text-sm md:text-xl text-black w-full md:w-full lg:w-[80%] font-regular`}>Whether it’s digital artwork, character design, or icons, I create visuals that enhance storytelling and branding, bringing creativity and originality to every project.</p>
-                  </div>
+                    <div className="">
+                      <p className={`${plus.className} text-sm md:text-xl text-black w-full md:w-full lg:w-[80%] font-regular`}>Whether it’s digital artwork, character design, or icons, I create visuals that enhance storytelling and branding, bringing creativity and originality to every project.</p>
+                    </div>
 
-                  <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
-                    <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="50" height="50" />
-                  </div>  
-            </Link>
-          </div>
+                    <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
+                      <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="50" height="50" />
+                    </div>  
+              </Link>
+            </Fade>
+          </div>  
         </div>
 
 
         {/* WORKS */}
-        <div className="bg-black w-full px-4 md:px-8 lg:px-24 py-16">
+        <div className="bg-black w-full px-4 md:px-8 lg:px-24 py-10 md:py-16 lg:py-16">
           {/* Heading */}
             <div className="flex flex-col md:flex-col lg:flex-row items-center justify-between">
-              <h2 className="uppercase mb-6 md:mb-16 text-white text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl">
-              <b className="text-[#646464]">Selected</b> Works
-              </h2>
+              <Fade direction="left" triggerOnce>
+                <h2 className="uppercase mb-6 md:mb-16 text-white text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl">
+                <b className="text-[#646464]">Selected</b> Works
+                </h2>
+              </Fade>
 
-              <div className="mb-4 md:mb-16">
-                <Btn2 name="View All" link="/works"/><br/>
-              </div>
+              <Fade direction="right" triggerOnce>
+                <div className="mb-4 md:mb-16">
+                  <Btn2 name="View All" link="/works"/><br/>
+                </div>
+              </Fade>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
-              <Card header="Ounje Ibile" text="Brand Design" image="/img/ounje.png" link={'/works'}/>
-              <Card header="Ankra" text="Web Development" image="/img/ankra.png" link={'https://www.ankra.vercel.app'}/>
-              <Card header="iGuard" text="UI/UX Design" image="/img/ig.png" link={'https://www.behance.net/gallery/224472665/iGuard'}/>
-              <Card header="Illustration" text="Illustration" image="/img/kungirl.jpg" link={'/works'}/>
+              <Fade triggerOnce>
+                <Card header="Ounje Ibile (In Progress)" text="Brand Design" image="/img/ounje.png" link={'/works'}/>
+                <Card header="Ankra" text="Web Development" image="/img/ankra.png" link={'https://www.ankra.vercel.app'}/>
+                <Card header="iGuard" text="UI/UX Design" image="/img/ig.png" link={'https://www.behance.net/gallery/224472665/iGuard'}/>
+                <Card header="Illustration" text="Illustration" image="/img/kungirl.jpg" link={'/works'}/>
+              </Fade>
             </div>
         </div>
 
         {/* TESTIMONIAL */}
-        <div className="bg-black w-full px-4 md:px-8 lg:px-24 py-16">
+        <div className="bg-black w-full px-4 md:px-8 lg:px-24 py-10 md:py-16 lg:py-16">
           {/* Heading */}
+          <Fade triggerOnce>
             <div className="flex flex-col md:flex-col lg:flex-row items-center justify-between">
               <h2 className="uppercase mb-6 md:mb-16 text-white text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl">
               <b className="text-[#646464]">Review from our</b> clients
@@ -197,54 +216,60 @@ export default function Home() {
                                     showcasing not only technical expertise but also a keen aesthetic eye. Each collaboration with him was a seamless experience, consistently
                                     delivering visually stunning and user-friendly interfaces. I highly recommend his services to anyone seeking a talented and reliable UI/UX professional"'/> */}
                             </div>
+          </Fade>
         </div>
 
 
         {/* CONTACTS */}
-        <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-16">
+        <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-6 md:py-16 lg:py-16">
             {/* Heading */}
             <div className="flex flex-col md:flex-col lg:flex-row items-center justify-between mb-4 md:mb-16">
               <div>
-                <h2 className="uppercase mb-2 text-[#646464] text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl">
-                  Let's Create Something
-                </h2>
+                <Fade direction="left" triggerOnce>
+                  <h2 className="uppercase mb-2 text-[#646464] text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl">
+                    Let's Create Something
+                  </h2>
 
-                <h2 className="uppercase text-black text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl mb-4 md:mb-6 lg:mb-0">
-                  Amazing Together
-                </h2> 
+                  <h2 className="uppercase text-black text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl mb-4 md:mb-6 lg:mb-0">
+                    Amazing Together
+                  </h2>
+                </Fade> 
               </div>
+
               <div>
-                <Btn name="Let's Talk" link="mailto:isrealitycreations@gmail.com"/><br/>
+                <Fade direction="right" triggerOnce><Btn name="Let's Talk" link="mailto:isrealitycreations@gmail.com"/></Fade><br/>
               </div>
             </div>
 
             <div className="">
-                <Image src="/img/woman.png" alt="customer" className="w-full" width={1000} height={1000} />
+                <Fade direction="up" triggerOnce><Image src="/img/woman.png" alt="customer" className="w-full" width={1000} height={1000} /></Fade>
             </div><br/>
 
             {/* Details */}
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 items-center gap-5">
-              <div className="bg-[#fafafa] flex flex-row gap-3 md:gap-5 px-4 md:px-8 py-8 md:py-16 rounded-lg items-center">
-                  <div className="flex flex-row bg-black px-4 py-4 md:px-6 md:py-6 rounded-full items-center gap-3">
-                      <Icon icon="ic:baseline-perm-phone-msg" className="text-white w-8 h-8 md:w-10 md:h-10" />    
-                  </div>
+              <Fade direction="up" triggerOnce>
+                <div className="bg-[#fafafa] flex flex-row gap-3 md:gap-5 px-4 md:px-8 py-8 md:py-16 rounded-lg items-center">
+                    <div className="flex flex-row bg-black px-4 py-4 md:px-6 md:py-6 rounded-full items-center gap-3">
+                        <Icon icon="ic:baseline-perm-phone-msg" className="text-white w-8 h-8 md:w-10 md:h-10" />    
+                    </div>
 
-                  <div className="">
-                    <h2 className="uppercase text-2xl md:text-5xl text-black font-black mb-2">Phone</h2>
-                    <p className="uppercase text-2xl md:text-3xl text-black font-light">+2348140082953</p>
-                  </div>  
-              </div>
+                    <div className="">
+                      <h2 className="uppercase text-2xl md:text-5xl text-black font-black mb-2">Phone</h2>
+                      <p className="uppercase text-2xl md:text-3xl text-black font-light">+2348140082953</p>
+                    </div>  
+                </div>
 
-              <div className="bg-[#fafafa] flex flex-row gap-3 md:gap-5 px-4 md:px-8 py-8 md:py-16 rounded-lg items-center">
-                  <div className="flex flex-row bg-black px-4 py-4 md:px-6 md:py-6 rounded-full items-center gap-3">
-                      <Icon icon="ic:baseline-email" className="text-white w-8 h-8 md:w-10 md:h-10"  />    
-                  </div>
+                <div className="bg-[#fafafa] flex flex-row gap-3 md:gap-5 px-4 md:px-8 py-8 md:py-16 rounded-lg items-center">
+                    <div className="flex flex-row bg-black px-4 py-4 md:px-6 md:py-6 rounded-full items-center gap-3">
+                        <Icon icon="ic:baseline-email" className="text-white w-8 h-8 md:w-10 md:h-10"  />    
+                    </div>
 
-                  <div className="">
-                    <h2 className="uppercase text-2xl md:text-5xl text-black font-black mb-2">Email</h2>
-                    <p className="text-2xl md:text-3xl text-black font-light">isrealitycreations@gmail.com</p>
-                  </div>  
-              </div>
+                    <div className="">
+                      <h2 className="uppercase text-2xl md:text-5xl text-black font-black mb-2">Email</h2>
+                      <p className="text-2xl md:text-3xl text-black font-light">isrealitycreations@gmail.com</p>
+                    </div>  
+                </div>
+              </Fade>
             </div>
 
         </div>

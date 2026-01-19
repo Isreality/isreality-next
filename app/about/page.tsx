@@ -48,28 +48,8 @@ export default function About() {
       </div>
 
       {/* IMAGE */}
-      {/* <div className="bg-[url('/img/izzy3.jpg')] bg-center bg-cover flex items-center h-50 md:h-140">
+      <div className="bg-[url('/img/izzy3.jpg')] bg-center bg-cover flex items-center h-50 md:h-140">
         
-      </div> */}
-
-      {/* EXPERIENCE */}
-      <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-6 md:py-16 lg:py-16">
-        <h2 className="uppercase mb-4 md:mb-8 text-black text-center md:text-center lg:text-center font-black text-4xl md:text-6xl lg:text-7xl">
-          <b className="text-[#646464]">My</b> Experience
-        </h2>
-      
-        {/* Features */}
-        <Experience title="Design Engineer | Illustrator" name="Isreality Creations" date="Nov 2019 - Present"/>
-        <Experience title="UI/UX Designer" name="Exceleron Technologies" date="Nov 2024 - Feb 2025"/>
-        <Experience title="Frontend Developer" name="Market Access" date="Jan 2024 - Nov 2024"/>
-        <Experience title="Frontend Developer" name="Livestock Management" date="Jan 2024 - Aug 2024"/>
-        <Experience title="Creative Director" name="720 Degree Innovation Hub" date="Aug 2023 - Nov 2023"/>
-        <Experience title="Product Designer" name="Ogdams Pay" date="Sept 2022 - Sept 2023"/>
-        <Experience title="UI/UX Designer" name="Clator" date="Aug 2022 - May 2023"/>
-        <Experience title="UI/UX Instructor" name="Citadelle Tech Hub" date="Aug 2021 - Aug 2023"/>
-        <Experience title="Graphic Designer" name="NACOS FUNAAB" date="May 2021 - Jul 2021"/>
-        <Experience title="Graphic & Frontend Developer" name="PXC Digitals" date="Aug 2019 - Nov 2019"/>
-        <Experience title="Design Intern" name="Next Layers Concept" date="Aug 2017 - Aug 2019"/>
       </div>
 
       {/* PROCESS */}
@@ -146,6 +126,27 @@ export default function About() {
           </div>           
         </div>
       </div>
+
+      {/* EXPERIENCE */}
+      <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-6 md:py-16 lg:py-16">
+        <h2 className="uppercase mb-4 md:mb-8 text-black text-center md:text-center lg:text-center font-black text-4xl md:text-6xl lg:text-7xl">
+          <b className="text-[#646464]">My</b> Experience
+        </h2>
+      
+        {/* Features */}
+        <Experience title="Design Engineer | Illustrator" name="Isreality Creations" date="Nov 2019 - Present"/>
+        <Experience title="UI/UX Designer" name="Exceleron Technologies" date="Nov 2024 - Feb 2025"/>
+        <Experience title="Frontend Developer" name="Market Access" date="Jan 2024 - Nov 2024"/>
+        <Experience title="Frontend Developer" name="Livestock Management" date="Jan 2024 - Aug 2024"/>
+        <Experience title="Creative Director" name="720 Degree Innovation Hub" date="Aug 2023 - Nov 2023"/>
+        <Experience title="Product Designer" name="Ogdams Pay" date="Sept 2022 - Sept 2023"/>
+        <Experience title="UI/UX Designer" name="Clator" date="Aug 2022 - May 2023"/>
+        <Experience title="UI/UX Instructor" name="Citadelle Tech Hub" date="Aug 2021 - Aug 2023"/>
+        <Experience title="Graphic Designer" name="NACOS FUNAAB" date="May 2021 - Jul 2021"/>
+        <Experience title="Graphic & Frontend Developer" name="PXC Digitals" date="Aug 2019 - Nov 2019"/>
+        <Experience title="Design Intern" name="Next Layers Concept" date="Aug 2017 - Aug 2019"/>
+      </div>
+
 
       {/* Tech Stack */}
       <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-4 md:py-8 lg:py-16">
