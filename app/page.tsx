@@ -22,7 +22,7 @@ export default function Home() {
         {/* Hero Section */}
         <div className="gap-0">
 
-            {/* Content */}
+            {/* Contents */}
             <div className=" flex flex-col md:flex-col lg:flex-row items-center -mt-30 md:-mt-30 lg:-mt-30">
               <div className="flex flex-col items-center md:items-center lg:items-start w-full md:w-full lg:w-[60%] px-4 md:px-20 mt-30 gap-0">
                 <Fade direction="up" triggerOnce cascade damping={0.1}>
