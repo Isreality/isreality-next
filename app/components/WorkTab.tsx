@@ -8,11 +8,11 @@ import { Fade } from "react-awesome-reveal";
 export default function WorkTab() {
   return (
     <Tabs defaultValue="ui" className="w-full">
-        <TabsList className="flex flex-wrap md:flex-wrap lg:flex-row bg-white gap-3 px-2 py-6 text-left mb-40 md:mb-40 lg:mb-16">
-            <TabsTrigger value="ui" className="data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:rounded-full rounded-full text-lg md:text-3xl px-8 py-8 border-[#646464] cursor-pointer uppercase">UI/UX Design</TabsTrigger>
-            <TabsTrigger value="web" className="data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:rounded-full rounded-full text-lg md:text-3xl px-8 py-8 border-[#646464] cursor-pointer uppercase">Web Development</TabsTrigger>
-            <TabsTrigger value="brand" className="data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:rounded-full rounded-full text-lg md:text-3xl px-8 py-8 border-[#646464] cursor-pointer uppercase">Brand Design</TabsTrigger>
-            <TabsTrigger value="ill" className="data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:rounded-full rounded-full  text-lg md:text-3xl px-8 py-8 border-[#646464] cursor-pointer uppercase">Illustration</TabsTrigger>
+        <TabsList className="flex flex-wrap md:flex-wrap lg:flex-row bg-white gap-2 md:gap-3 px-2 py-6 text-left mb-35 md:mb-40 lg:mb-16">
+            <TabsTrigger value="ui" className="data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:rounded-full rounded-full text-sm md:text-3xl px-8 py-8 border-[#646464] cursor-pointer uppercase">UI/UX Design</TabsTrigger>
+            <TabsTrigger value="web" className="data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:rounded-full rounded-full text-sm md:text-3xl px-8 py-8 border-[#646464] cursor-pointer uppercase">Web Development</TabsTrigger>
+            <TabsTrigger value="brand" className="data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:rounded-full rounded-full text-sm md:text-3xl px-8 py-8 border-[#646464] cursor-pointer uppercase">Brand Design</TabsTrigger>
+            <TabsTrigger value="ill" className="data-[state=active]:bg-primary data-[state=active]:text-white data-[state=active]:rounded-full rounded-full  text-sm md:text-3xl px-8 py-8 border-[#646464] cursor-pointer uppercase">Illustration</TabsTrigger>
         </TabsList>
 
         <TabsContent value="ui">

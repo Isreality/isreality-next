@@ -14,15 +14,15 @@ export default function About() {
       
         {/* Content */}
         <div className="">
-          <div className="w-full px-4 md:px-20 mt-10 gap-0">
+          <div className="w-full px-4 md:px-20 mt-0 md:mt-10 gap-0">
             <Fade direction="down" triggerOnce>
-              <h2 className="text-black text-center font-black text-6xl md:text-[120px] lg:text-[220px] mt-8 md:mt-8 lg:mt-0">
+              <h2 className="text-black text-center font-black text-5xl md:text-[120px] lg:text-[220px] mt-8 md:mt-8 lg:mt-0">
                 ISRAEL AGBAJE
               </h2>
             </Fade>
             
             <Fade direction="up" triggerOnce>
-              <h2 className= " text-center text-transparent text-outline-1 font-black text-6xl md:text-[120px] lg:text-[220px] mt-2 md:mt-4 lg:mt-0">
+              <h2 className= " text-center text-transparent text-outline-1 font-black text-5xl md:text-[120px] lg:text-[220px] mt-2 md:mt-4 lg:mt-0">
                 ISRAEL AGBAJE
               </h2>
             </Fade><br/>
@@ -36,7 +36,7 @@ export default function About() {
 
           {/* Image tablet and mobile */}
           <div className="grid justify-items-center md:hidden">
-            <Fade direction="up" triggerOnce><Image src="/img/isreality.png" alt="Dante" className="-mt-40 md:-mt-60 lg:-mt-120" width={400} height={400} /></Fade>
+            <Fade direction="up" triggerOnce><Image src="/img/isreality.png" alt="Dante" className="-mt-40 md:-mt-60 lg:-mt-120" width={250} height={250} /></Fade>
           </div>
         </div>   
       </div>
@@ -181,8 +181,8 @@ export default function About() {
               </div>
         
               <div className="">
-                <h2 className="uppercase text-2xl md:text-3xl text-black font-normal mb-0 md:mb-2">Figma</h2>
-                <p className="text-xl md:text-2xl text-[#646464] font-light">Product Design</p>
+                <h2 className="uppercase text-2xl md:text-4xl text-black font-normal mb-0 md:mb-2">Figma</h2>
+                <p className={`${plus.className} text-base md:text-2xl text-black font-normal`}>Product Design</p>
               </div>  
             </div>
 
@@ -193,8 +193,8 @@ export default function About() {
               </div>
         
               <div className="">
-                <h2 className="uppercase text-2xl md:text-3xl text-black font-normal mb-0 md:mb-2">Github</h2>
-                <p className="text-xl md:text-2xl text-[#646464] font-light">Web Development</p>
+                <h2 className="uppercase text-2xl md:text-4xl text-black font-normal mb-0 md:mb-2">Github</h2>
+                <p className={`${plus.className} text-base md:text-2xl text-black font-normal`}>Web Development</p>
               </div>  
             </div>
 
@@ -205,8 +205,8 @@ export default function About() {
               </div>
         
               <div className="">
-                <h2 className="uppercase text-2xl md:text-3xl text-black font-normal mb-0 md:mb-2">Photoshop</h2>
-                <p className="text-xl md:text-2xl text-[#646464] font-light">Brand Design</p>
+                <h2 className="uppercase text-2xl md:text-4xl text-black font-normal mb-0 md:mb-2">Photoshop</h2>
+                <p className={`${plus.className} text-base md:text-2xl text-black font-normal`}>Brand Design</p>
               </div>  
             </div>
 
@@ -217,8 +217,8 @@ export default function About() {
               </div>
         
               <div className="">
-                <h2 className="uppercase text-2xl md:text-3xl text-black font-normal mb-0 md:mb-2">Illustrator</h2>
-                <p className="text-xl md:text-2xl text-[#646464] font-light">Illustration</p>
+                <h2 className="uppercase text-2xl md:text-4xl text-black font-normal mb-0 md:mb-2">Illustrator</h2>
+                <p className={`${plus.className} text-base md:text-2xl text-black font-normal`}>Illustration</p>
               </div>  
             </div>
           </Fade>

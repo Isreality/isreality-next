@@ -28,12 +28,12 @@ export default function Home() {
                     ISRAEL AGBAJE
                   </h2><br/>
 
-                  <h1 className={`${plus.className} text-black text-sm md:text-lg lg:text-xl text-center md:text-center lg:text-left w-full font-regular`}>
+                  <h1 className={`${plus.className} text-black text-base md:text-lg lg:text-xl text-center md:text-center lg:text-left w-full font-regular`}>
                     A Brand Designer, Design Engineer and Illustrator, dedicated to crafting beautiful and functional digital experiences.
                   </h1><br/>
                   
                   {/* Hero Button */}
-                  <div className="flex flex-row items-center gap-2">
+                  <div className="flex flex-col md:flex-row items-center gap-2">
                     <Btn name="Design CV" link="https://drive.google.com/file/d/1jociKuMGT0lWljKHCTgygnjgahaN187Y/view?usp=drive_link"/>
                     <Btn2 name="Frontend CV" link="https://drive.google.com/file/d/1fKhZhuQmWcHQ0z3C5sIBNRShanyHvwhx/view?usp=drive_link"/>
                   </div><br/>
@@ -67,28 +67,24 @@ export default function Home() {
 
               {/* Image tablet and mobile */}
               <div className="lg:hidden">
-                <Fade direction="up" triggerOnce><Image src="/img/isreality.png" alt="Dante" className="" width={1000} height={1000} /></Fade>
+                <Fade direction="up" triggerOnce><Image src="/img/isreality.png" alt="Dante" className="" width={500} height={500} /></Fade>
               </div>
-              
-
             </div>   
         </div>
 
         {/* ABOUT */}
-        <div className="bg-white w-full px-4 md:px-8 lg:px-20 py-6 md:py-16 lg:py-16">
+        {/* <div className="bg-white w-full px-4 md:px-8 lg:px-20 py-6 md:py-16 lg:py-16">
           <Fade direction="up" triggerOnce>
             <h1 className={`${plus.className} text-black text-base md:text-2xl lg:text-4xl/16 text-center md:text-center lg:text-left font-medium`}>
               A Brand Designer, Design Engineer and Illustrator, dedicated to crafting beautiful and functional digital experiences. I design smooth interfaces, build brands with character, and write code that brings ideas to life on the web.
             </h1>
-
-            {/* <div className="flex items-center"><Btn name="See More" link="/about"/></div> */}
           </Fade>
-        </div>
+        </div> */}
         
         {/* SERVICES */}
         <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-6 md:py-16 lg:py-16">
           <Fade direction="up" triggerOnce>
-            <h2 className="uppercase mb-4 md:mb-16 text-black text-center md:text-center lg:text-center font-black text-4xl md:text-6xl lg:text-7xl">
+            <h2 className="uppercase mb-4 md:mb-16 text-black text-center md:text-center lg:text-center font-black text-3xl md:text-6xl lg:text-7xl">
               <b className="text-[#646464]">My</b> Expertise
             </h2>
           </Fade>
@@ -171,7 +167,7 @@ export default function Home() {
           {/* Heading */}
             <div className="flex flex-col md:flex-col lg:flex-row items-center justify-between">
               <Fade direction="left" triggerOnce>
-                <h2 className="uppercase mb-6 md:mb-16 text-white text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl">
+                <h2 className="uppercase mb-6 md:mb-16 text-white text-center md:text-center lg:text-left font-black text-3xl md:text-6xl lg:text-7xl">
                 <b className="text-[#646464]">Selected</b> Works
                 </h2>
               </Fade>
@@ -198,7 +194,7 @@ export default function Home() {
           {/* Heading */}
           <Fade triggerOnce>
             <div className="flex flex-col md:flex-col lg:flex-row items-center justify-between">
-              <h2 className="uppercase mb-6 md:mb-16 text-white text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl">
+              <h2 className="uppercase mb-6 md:mb-16 text-white text-center md:text-center lg:text-left font-black text-3xl md:text-6xl lg:text-7xl">
               <b className="text-[#646464]">Review from our</b> clients
               </h2>
 
@@ -233,11 +229,11 @@ export default function Home() {
             <div className="flex flex-col md:flex-col lg:flex-row items-center justify-between mb-4 md:mb-16">
               <div>
                 <Fade direction="left" triggerOnce>
-                  <h2 className="uppercase mb-2 text-[#646464] text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl">
+                  <h2 className="uppercase mb-2 text-[#646464] text-center md:text-center lg:text-left font-black text-3xl md:text-6xl lg:text-7xl">
                     Let's Create Something
                   </h2>
 
-                  <h2 className="uppercase text-black text-center md:text-center lg:text-left font-black text-4xl md:text-6xl lg:text-7xl mb-4 md:mb-6 lg:mb-0">
+                  <h2 className="uppercase text-black text-center md:text-center lg:text-left font-black text-3xl md:text-6xl lg:text-7xl mb-4 md:mb-6 lg:mb-0">
                     Amazing Together
                   </h2>
                 </Fade> 
@@ -257,23 +253,23 @@ export default function Home() {
               <Fade direction="up" triggerOnce>
                 <div className="bg-[#fafafa] flex flex-row gap-3 md:gap-5 px-4 md:px-8 py-8 md:py-16 rounded-lg items-center">
                     <div className="flex flex-row bg-black px-4 py-4 md:px-6 md:py-6 rounded-full items-center gap-3">
-                        <Icon icon="ic:baseline-perm-phone-msg" className="text-white w-8 h-8 md:w-10 md:h-10" />    
+                        <Icon icon="ic:baseline-perm-phone-msg" className="text-white w-6 h-6 md:w-10 md:h-10" />    
                     </div>
 
                     <div className="">
-                      <h2 className="uppercase text-2xl md:text-5xl text-black font-black mb-2">Phone</h2>
-                      <p className="uppercase text-2xl md:text-3xl text-black font-light">+2348140082953</p>
+                      <h2 className="uppercase text-2xl md:text-4xl text-black font-black mb-0 md:mb-2">Phone</h2>
+                      <p className={`${plus.className} font-normal text-base md:text-2xl text-black`}>+2348140082953</p>
                     </div>  
                 </div>
 
                 <div className="bg-[#fafafa] flex flex-row gap-3 md:gap-5 px-4 md:px-8 py-8 md:py-16 rounded-lg items-center">
                     <div className="flex flex-row bg-black px-4 py-4 md:px-6 md:py-6 rounded-full items-center gap-3">
-                        <Icon icon="ic:baseline-email" className="text-white w-8 h-8 md:w-10 md:h-10"  />    
+                        <Icon icon="ic:baseline-email" className="text-white w-6 h-6 md:w-10 md:h-10"  />    
                     </div>
 
                     <div className="">
-                      <h2 className="uppercase text-2xl md:text-5xl text-black font-black mb-2">Email</h2>
-                      <p className="text-2xl md:text-3xl text-black font-light">isrealitycreations@gmail.com</p>
+                      <h2 className="uppercase text-2xl md:text-4xl text-black font-black mb-0 md:mb-2">Email</h2>
+                      <p className={`${plus.className} font-normal text-base md:text-2xl text-black`}>isrealitycreations@gmail.com</p>
                     </div>  
                 </div>
               </Fade>

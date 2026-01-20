@@ -1,4 +1,7 @@
+'use client';
+
 import Link from "next/link";
+import Image from "next/image";
 import { plus } from '../font';
 import { Icon } from '@iconify/react';
 
@@ -13,7 +16,7 @@ export default function Card({ header, text, image, link }: CardProps) {
   return (
     <div className="card bg-white px-2 py-2 md:py-2 rounded-md overflow-hidden">
                 <Link href={link} target="_blank">
-                    <img className='h-50 md:h-125 lg:h-140 w-full object-cover hover:scale-105 rounded-lg' src={image} alt=""></img>
+                    <img className='h-50 md:h-125 lg:h-140 w-full object-contain md:object-cover hover:scale-105 rounded-lg' src={image} alt="" />
                         <div className="flex flex-col px-0 md:px-4 py-4 md:py-6">
                             <div className="flex flex-row justify-between uppercase mb-2 md:mb-4">
                                 <h2 className="text-black text-2xl md:text-5xl font-black">{header}</h2>
@@ -26,6 +29,6 @@ export default function Card({ header, text, image, link }: CardProps) {
                         </div>
                 </Link>
                 
-            </div>
+    </div>
   )
 }
