@@ -1,5 +1,8 @@
+
+
 import Image from "next/image";
 import WorkTab from "../components/WorkTab"
+import BackToTop from "../components/BackToTop";
 import { Fade } from "react-awesome-reveal";
 
 
@@ -12,6 +15,11 @@ export default function Works() {
             <b className="text-[#646464]">Selected</b> Works
           </h2>
         </Fade>
+      </div>
+
+      {/* BACK TO TOP */}
+      <div>
+        {/* <BackToTop/> */}
       </div>
       
       <div className="w-full px-4 md:px-8 lg:px-24 py-2 md:py-16">

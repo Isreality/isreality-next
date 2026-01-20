@@ -10,15 +10,17 @@ import { Icon } from '@iconify/react';
 import Testimonial from "./components/Testimonial";
 import Btn from "./components/Btn";
 import Btn2 from "./components/Btn2";
+import BackToTop from "./components/BackToTop";
 import { Fade } from "react-awesome-reveal";
 import CountUp from 'react-countup';
+
 
 export default function Home() {
   return (
     <div>
       <main>
         {/* Hero Section */}
-        <div className="gap-0 ">
+        <div className="gap-0">
 
             {/* Content */}
             <div className=" flex flex-col md:flex-col lg:flex-row items-center -mt-30 md:-mt-30 lg:-mt-30">
@@ -61,7 +63,7 @@ export default function Home() {
 
               {/* Image desktop */}
               <div className="hidden md:hidden lg:flex -z-10">
-                <Fade direction="right" triggerOnce><Image src="/img/izzy_hero.png" alt="Dante" className="" width={1000} height={1000} /></Fade>
+                <Fade direction="right" triggerOnce><Image src="/img/izzy_hero.png" alt="Dante" loading="eager" className="" width={1000} height={1000} /></Fade>
               </div>
               
 
@@ -72,14 +74,10 @@ export default function Home() {
             </div>   
         </div>
 
-        {/* ABOUT */}
-        {/* <div className="bg-white w-full px-4 md:px-8 lg:px-20 py-6 md:py-16 lg:py-16">
-          <Fade direction="up" triggerOnce>
-            <h1 className={`${plus.className} text-black text-base md:text-2xl lg:text-4xl/16 text-center md:text-center lg:text-left font-medium`}>
-              A Brand Designer, Design Engineer and Illustrator, dedicated to crafting beautiful and functional digital experiences. I design smooth interfaces, build brands with character, and write code that brings ideas to life on the web.
-            </h1>
-          </Fade>
-        </div> */}
+        {/* BACK TO TOP */}
+        <div>
+          <BackToTop/>
+        </div>
         
         {/* SERVICES */}
         <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-6 md:py-16 lg:py-16">
@@ -173,7 +171,7 @@ export default function Home() {
               </Fade>
 
               <Fade direction="right" triggerOnce>
-                <div className="mb-4 md:mb-16">
+                <div className="mb-2 md:mb-16">
                   <Btn2 name="View All" link="/works"/><br/>
                 </div>
               </Fade>

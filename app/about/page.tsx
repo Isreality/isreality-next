@@ -1,9 +1,12 @@
+'use client';
+
 import Link from "next/link";
 import Image from "next/image";
 import { Icon } from '@iconify/react';
 import "../globals.css";
 import { plus } from '../font';
 import Experience from "../components/Experience";
+import BackToTop from "../components/BackToTop";
 import { Fade } from "react-awesome-reveal";
 
 
@@ -39,6 +42,11 @@ export default function About() {
             <Fade direction="up" triggerOnce><Image src="/img/isreality.png" alt="Dante" className="-mt-40 md:-mt-60 lg:-mt-120" width={250} height={250} /></Fade>
           </div>
         </div>   
+      </div>
+
+      {/* BACK TO TOP */}
+      <div>
+        <BackToTop/>
       </div>
 
       {/* ABOUT */}
