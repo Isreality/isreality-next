@@ -6,7 +6,6 @@ import { Icon } from '@iconify/react';
 import "../globals.css";
 import { plus } from '../font';
 import Experience from "../components/Experience";
-import BackToTop from "../components/BackToTop";
 import { Fade } from "react-awesome-reveal";
 
 
@@ -17,7 +16,7 @@ export default function About() {
       
         {/* Content */}
         <div className="">
-          <div className="w-full px-4 md:px-20 mt-0 md:mt-10 gap-0">
+          <div className="w-full px-4 md:px-20 mt-24 md:mt-24 lg:mt-10 gap-0">
             <Fade direction="down" triggerOnce>
               <h2 className="text-black text-center font-black text-5xl md:text-[120px] lg:text-[220px] mt-8 md:mt-8 lg:mt-0">
                 ISRAEL AGBAJE
@@ -46,7 +45,7 @@ export default function About() {
 
       {/* BACK TO TOP */}
       <div>
-        <BackToTop/>
+        
       </div>
 
       {/* ABOUT */}

@@ -10,7 +10,7 @@ import { Icon } from '@iconify/react';
 import Testimonial from "./components/Testimonial";
 import Btn from "./components/Btn";
 import Btn2 from "./components/Btn2";
-import BackToTop from "./components/BackToTop";
+// import BackToTop from "./components/BackToTop";
 import { Fade } from "react-awesome-reveal";
 import CountUp from 'react-countup';
 
@@ -23,10 +23,10 @@ export default function Home() {
         <div className="gap-0">
 
             {/* Contents */}
-            <div className=" flex flex-col md:flex-col lg:flex-row items-center -mt-30 md:-mt-30 lg:-mt-30">
+            <div className=" flex flex-col md:flex-col lg:flex-row items-center mt-0 md:mt-0 lg:-mt-30">
               <div className="flex flex-col items-center md:items-center lg:items-start w-full md:w-full lg:w-[60%] px-4 md:px-20 mt-30 gap-0">
                 <Fade direction="up" triggerOnce cascade damping={0.1}>
-                  <h2 className="text-black text-center md:text-center lg:text-left font-black text-6xl md:text-8xl lg:text-9xl mt-8 md:mt-8 lg:mt-0">
+                  <h2 className="text-black text-center md:text-center lg:text-left font-black text-6xl md:text-8xl lg:text-9xl mt-0 md:mt-8 lg:mt-0">
                     ISRAEL AGBAJE
                   </h2><br/>
 
@@ -76,7 +76,7 @@ export default function Home() {
 
         {/* BACK TO TOP */}
         <div>
-          <BackToTop/>
+          {/* <BackToTop/> */}
         </div>
         
         {/* SERVICES */}
