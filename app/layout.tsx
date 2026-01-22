@@ -4,6 +4,7 @@ import { antonio } from './font';
 import { plus } from './font';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Navbar/>
         {children}
         <Footer/>
+        <BackToTop/>
       </body>
     </html>
   );

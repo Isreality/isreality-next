@@ -14,22 +14,22 @@ export default function Footer() {
                 </div>
 
                 <div className="flex flex-row gap-8 md:gap-10 lg:gap-5 items-center">
-                    <Link href="https://www.github.com/Isreality">
+                    <Link href="https://www.github.com/Isreality" target="_blank">
                         {/* <Icon icon="qlementine-icons:github-24" className="text-white" width="40" height="40" /> */}
                         <p className="text-white text-2xl md:text-3xl font-normal uppercase">Github</p>
                     </Link>
 
-                    <Link href="https://www.behance.net/agbajeisrael">
+                    <Link href="https://www.behance.net/agbajeisrael" target="_blank">
                         {/* <Icon icon="cib:behance" className="text-white" width="40" height="40" /> */}
                         <p className="text-white text-2xl md:text-3xl font-normal uppercase">Behance</p>
                     </Link>
 
-                    <Link href="https://www.x.com/Agbaje_Israel01">
+                    <Link href="https://www.x.com/Agbaje_Israel01" target="_blank">
                         {/* <Icon icon="prime:twitter" className="text-white" width="35" height="35" /> */}
                         <p className="text-white text-2xl md:text-3xl font-normal uppercase">X</p>
                     </Link>
 
-                    <Link href="https://www.linkedin.com/in/agbajeisrael">
+                    <Link href="https://www.linkedin.com/in/agbajeisrael" target="_blank">
                         {/* <Icon icon="ri:linkedin-fill" className="text-white" width="40" height="40" /> */}
                         <p className="text-white text-2xl md:text-3xl font-normal uppercase">Linkedin</p>
                     </Link>
