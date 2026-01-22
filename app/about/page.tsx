@@ -193,14 +193,14 @@ export default function About() {
               </div>  
             </div>
 
-            {/* Github */}
+            {/* Next Js */}
             <div className="bg-[#fafafa] flex flex-row gap-3 md:gap-5 px-4 md:px-8 py-8 md:py-10 rounded-lg items-center">
               <div className="">
-                <Icon icon="logos:github-icon" className="w-16 h-16 md:w-20 md:h-20" />    
+                <Icon icon="devicon:nextjs" className="w-16 h-16 md:w-20 md:h-20" />    
               </div>
         
               <div className="">
-                <h2 className="uppercase text-2xl md:text-4xl text-black font-normal mb-0 md:mb-2">Github</h2>
+                <h2 className="uppercase text-2xl md:text-4xl text-black font-normal mb-0 md:mb-2">Next Js</h2>
                 <p className={`${plus.className} text-base md:text-2xl text-black font-normal`}>Web Development</p>
               </div>  
             </div>
