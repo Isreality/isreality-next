@@ -81,7 +81,7 @@ export default function Navbar() {
           <Image src="/img/dnt.jpg" alt="Dante" className="rounded-full" width={60} height={60}/>
         </Link>
 
-        <div className="hidden md:hidden lg:flex flex-row gap-80 items-center">
+        <div className="hidden md:hidden lg:flex flex-row gap-80 2xl:gap-200 items-center justify-between">
           <nav className="flex flex-row gap-10 font-medium">
 
             <Link
