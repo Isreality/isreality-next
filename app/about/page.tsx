@@ -78,10 +78,10 @@ export default function About() {
         <div>
           <Fade direction="up" triggerOnce cascade damping={0.1}>
             {/* Research */}
-            <div className="bg-black flex flex-col md:flex-col lg:flex-row rounded-lg gap-2 md:gap-4 lg:gap-20 px-4 md:px-6 py-8 md:py-16 border-b-2 items-center justify-between">
+            <div className="bg-black flex flex-col md:flex-col lg:flex-col rounded-lg gap-2 md:gap-4 px-4 md:px-6 py-8 md:py-16 border-b-2 items-start">
               <div className="flex flex-row uppercase text-white text-3xl md:text-5xl w-full mb-2 md:mb-2 lg:mb-0">
                 <h2 className="font-black">01.</h2>    
-                <p className="font-light">Research & Strategy</p>
+                <p className="font-light">Research</p>
               </div>
           
               <div className="">
@@ -91,8 +91,8 @@ export default function About() {
             </div>
 
             {/* Ideation */}
-            <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 lg:gap-80 px-4 md:px-6 py-4 md:py-8 lg:py-16 border-b-2 items-start md:items-start lg:items-center justify-between">
-              <div className="flex flex-row uppercase text-black text-3xl md:text-5xl mb-2 md:mb-2 lg:mb-0">
+            <div className="bg-white flex flex-col md:flex-col lg:flex-col gap-2 md:gap-4 px-4 md:px-6 py-4 md:py-8 lg:py-16 border-b-2 items-start">
+              <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full mb-2 md:mb-2 lg:mb-0">
                 <h2 className="font-black">02.</h2>    
                 <p className="font-light">Ideation</p>
               </div>
@@ -104,8 +104,8 @@ export default function About() {
             </div>
 
             {/* Feedback */}
-            <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 lg:gap-85 px-4 md:px-6 py-4 md:py-8 lg:py-16 border-b-2 items-start md:items-start lg:items-center justify-between">
-              <div className="flex flex-row uppercase text-black text-3xl md:text-5xl mb-2 md:mb-2 lg:mb-0">
+            <div className="bg-white flex flex-col md:flex-col lg:flex-col gap-2 md:gap-4  px-4 md:px-6 py-4 md:py-8 lg:py-16 border-b-2 items-start">
+              <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full mb-2 md:mb-2 lg:mb-0">
                 <h2 className="font-black">03.</h2>    
                 <p className="font-light">Design</p>
               </div>
@@ -117,27 +117,27 @@ export default function About() {
             </div>
 
             {/* Testing */}
-            <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 lg:gap-60 px-4 md:px-6 py-4 md:py-8 lg:py-16 border-b-2 items-start md:items-start lg:items-center justify-between">
-              <div className="flex flex-row uppercase text-black text-3xl md:text-5xl mb-2 md:mb-2 lg:mb-0">
+            <div className="bg-white flex flex-col md:flex-col lg:flex-col gap-2 md:gap-4 px-4 md:px-6 py-4 md:py-8 lg:py-16 border-b-2 items-start">
+              <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full mb-2 md:mb-2 lg:mb-0">
                 <h2 className="font-black">04.</h2>    
                 <p className="font-light">Development</p>
               </div>
           
               <div className="">
-                <p className={`${plus.className} text-sm md:text-lg text-black font-normal`}>
+                <p className={`${plus.className} text-sm md:text-lg text-black text-left font-normal`}>
                   Once the design is approved, I build your website using modern, responsive technologies. I ensure that it’s optimized for speed, SEO, and a flawless user experience across all devices.</p>
               </div>
             </div>
 
             {/* Launch */}
-            <div className="bg-white flex flex-col md:flex-col lg:flex-row gap-2 md:gap-4 lg:gap-10 px-4 md:px-6 py-4 md:py-8 lg:py-16 items-center justify-between">
+            <div className="bg-white flex flex-col md:flex-col lg:flex-col gap-2 md:gap-4 px-4 md:px-6 py-4 md:py-8 lg:py-16 items-start">
               <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full mb-2 md:mb-2 lg:mb-0">
                 <h2 className="font-black">05.</h2>    
                 <p className="font-light">Launch & Delivery</p>
               </div>
           
               <div className="">
-                <p className={`${plus.className} text-sm md:text-lg text-black font-normal`}>
+                <p className={`${plus.className} text-sm md:text-lg text-black text-left font-normal`}>
                   Once everything is finalized, the project is launched and delivered to you. I also provide guidance or support for ongoing maintenance to ensure long-term success.</p>
               </div>
             </div> 

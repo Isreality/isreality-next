@@ -99,12 +99,12 @@ export default function Home() {
                     </div>
 
                     <div className="">
-                      <p className={`${plus.className} text-sm md:text-xl text-white w-full md:w-full lg:w-[80%] font-light`}>
+                      <p className={`${plus.className} text-sm md:text-lg text-white w-full md:w-full lg:w-[80%] font-light`}>
                         Focus on creating visually appealing interfaces that delights users through wireframing, prototyping, and user testing to deliver a seamless user experience.</p>
                     </div>
 
                     <div className="hidden md:hidden lg:flex bg-white p-2 rounded-full">
-                      <Icon className="text-black rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="50" height="50" />
+                      <Icon className="text-black rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="45" height="45" />
                     </div>  
               </Link>
 
@@ -112,15 +112,15 @@ export default function Home() {
               <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-4 md:px-8 py-6 md:py-16 border-b-2 items-center justify-between">
                     <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-full mb-2 md:mb-2 lg:mb-0">
                         <h2 className="font-black">02.</h2>    
-                        <p className="font-light">WEB DEVELOPMENT</p>
+                        <p className="font-light">WEB Development</p>
                     </div>
 
                     <div className="">
-                      <p className={`${plus.className} text-sm md:text-xl text-black w-full md:w-full lg:w-[80%] font-regular`}>Create visually stunning and user-friendly websites and responsive web applications using modern technologies like HTML, CSS, JavaScript(React & Next Js) and Wordpress.</p>
+                      <p className={`${plus.className} text-sm md:text-lg text-black w-full md:w-full lg:w-[80%] font-regular`}>Create visually stunning and user-friendly websites and responsive web applications using modern technologies like HTML, CSS, JavaScript(React & Next Js) and Wordpress.</p>
                     </div>
 
                     <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
-                      <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="50" height="50" />
+                      <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="45" height="45" />
                     </div>  
               </Link>
 
@@ -132,11 +132,11 @@ export default function Home() {
                     </div>
 
                     <div className="">
-                      <p className={`${plus.className} text-sm md:text-xl text-black w-full md:w-full lg:w-[80%] font-regular`}>Design unique logos and graphics that reflect the essence of your brand, ensuring it maintains a visually appealing image across all digital touchpoints.</p>
+                      <p className={`${plus.className} text-sm md:text-lg text-black w-full md:w-full lg:w-[80%] font-regular`}>Design unique logos and graphics that reflect the essence of your brand, ensuring it maintains a visually appealing image across all digital touchpoints.</p>
                     </div>
 
                     <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
-                      <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="50" height="50" />
+                      <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="45" height="45" />
                     </div>  
               </Link>
 
@@ -148,11 +148,11 @@ export default function Home() {
                     </div>
 
                     <div className="">
-                      <p className={`${plus.className} text-sm md:text-xl text-black w-full md:w-full lg:w-[80%] font-regular`}>Whether it’s digital artwork, character design, or icons, I create visuals that enhance storytelling and branding, bringing creativity and originality to every project.</p>
+                      <p className={`${plus.className} text-sm md:text-lg text-black w-full md:w-full lg:w-[80%] font-regular`}>Whether it’s digital artwork, character design, or icons, I create visuals that enhance storytelling and branding, bringing creativity and originality to every project.</p>
                     </div>
 
                     <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
-                      <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="50" height="50" />
+                      <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="45" height="45" />
                     </div>  
               </Link>
             </Fade>
