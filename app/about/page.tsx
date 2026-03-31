@@ -18,13 +18,13 @@ export default function About() {
         <div className="">
           <div className="w-full px-4 md:px-20 mt-24 md:mt-24 lg:mt-10 gap-0">
             <Fade direction="down" triggerOnce>
-              <h2 className="text-black text-center font-black text-5xl md:text-[120px] lg:text-[220px] mt-8 md:mt-8 lg:mt-0">
+              <h2 className="text-black text-center font-black text-5xl md:text-[110px] lg:text-[220px] mt-8 md:mt-8 lg:mt-0">
                 ISRAEL AGBAJE
               </h2>
             </Fade>
             
             <Fade direction="up" triggerOnce>
-              <h2 className= " text-center text-transparent text-outline-1 font-black text-5xl md:text-[120px] lg:text-[220px] mt-2 md:mt-4 lg:mt-0">
+              <h2 className= " text-center text-transparent text-outline-1 font-black text-5xl md:text-[110px] lg:text-[220px] mt-2 md:mt-4 lg:mt-0">
                 ISRAEL AGBAJE
               </h2>
             </Fade><br/>
@@ -32,8 +32,8 @@ export default function About() {
           </div>       
       
           {/* Image desktop and tablet */}
-          <div className="hidden  md:grid justify-items-center">
-            <Fade direction="up" triggerOnce><Image src="/img/isreality.png" alt="Dante" className="-mt-40 md:-mt-60 lg:-mt-120" width={1000} height={700} /></Fade>
+          <div className="hidden md:grid justify-items-center">
+            <Fade direction="up" triggerOnce><Image src="/img/isreality.png" alt="Dante" className="-mt-40 md:-mt-50 lg:-mt-120" width={1000} height={700} /></Fade>
           </div>
 
           {/* Image tablet and mobile */}
@@ -62,7 +62,7 @@ export default function About() {
       </div>
 
       {/* IMAGE */}
-      <div className="bg-[url('/img/izzy3.jpg')] bg-center bg-cover flex items-center h-50 md:h-140">
+      <div className="bg-[url('/img/izzy3.jpg')] bg-center bg-cover flex items-center h-50 md:h-140 lg:h-140 2xl:h-200">
         
       </div>
 
@@ -85,7 +85,7 @@ export default function About() {
               </div>
           
               <div className="">
-                <p className={`${plus.className} text-sm md:text-lg text-white font-light`}>
+                <p className={`${plus.className} text-sm md:text-lg lg:text-lg 2xl:text-2xl text-white font-light`}>
                   We start by understanding your business, goals, and target audience. This phase includes research, competitor analysis, and defining the project scope to ensure a clear direction.</p>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function About() {
               </div>
           
               <div className="">
-                <p className={`${plus.className} text-sm md:text-lg text-left text-black font-normal`}>
+                <p className={`${plus.className} text-sm md:text-lg lg:text-lg 2xl:text-2xl text-left text-black font-normal`}>
                   Here, I brainstorm and develop creative concepts that align with your vision. Initial sketches and ideas are refined into tangible wireframes, setting the direction for design and functionality.</p>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function About() {
               </div>
           
               <div className="">
-                <p className={`${plus.className} text-sm md:text-lg text-black font-normal`}>
+                <p className={`${plus.className} text-sm md:text-lg lg:text-lg 2xl:text-2xl text-black font-normal`}>
                   This is where your website comes to life. Using your brand identity, I design a visually compelling interface with the perfect balance of aesthetics and usability.</p>
               </div>
             </div>
@@ -124,7 +124,7 @@ export default function About() {
               </div>
           
               <div className="">
-                <p className={`${plus.className} text-sm md:text-lg text-black text-left font-normal`}>
+                <p className={`${plus.className} text-sm md:text-lg lg:text-lg 2xl:text-2xl text-black text-left font-normal`}>
                   Once the design is approved, I build your website using modern, responsive technologies. I ensure that it’s optimized for speed, SEO, and a flawless user experience across all devices.</p>
               </div>
             </div>
@@ -137,7 +137,7 @@ export default function About() {
               </div>
           
               <div className="">
-                <p className={`${plus.className} text-sm md:text-lg text-black text-left font-normal`}>
+                <p className={`${plus.className} text-sm md:text-lg lg:text-lg 2xl:text-2xl text-black text-left font-normal`}>
                   Once everything is finalized, the project is launched and delivered to you. I also provide guidance or support for ongoing maintenance to ensure long-term success.</p>
               </div>
             </div> 

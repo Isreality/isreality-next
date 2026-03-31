@@ -19,11 +19,11 @@ export default function Card({ header, text, image, link }: CardProps) {
                     <img className='h-50 md:h-125 lg:h-140 2xl:h-250 w-full object-cover md:object-cover hover:scale-105 rounded-lg' src={image} alt="" />
                         <div className="flex flex-col px-0 md:px-4 py-4 md:py-6">
                             <div className="flex flex-row justify-between uppercase mb-2 md:mb-4">
-                                <h2 className="text-black text-2xl md:text-5xl font-black">{header}</h2>
+                                <h2 className="text-black text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl font-black">{header}</h2>
                                 {/* <div className="bg-black p-2 rounded-full"><Icon className="text-white w-6 h-6 md:w-10 md:h-10 rotate-45 hover:rotate-90" icon="prime:arrow-up" /></div> */}
                             </div>
                             <div className="">   
-                                <p className={`${plus.className} text-black text-justify md:text-justify text-sm md:text-lg lg:text-lg 2xl:text-2xl font-normal mb-0 md:mb-2`}>
+                                <p className={`${plus.className} text-black text-justify md:text-justify text-sm md:text-lg lg:text-lg 2xl:text-3xl font-normal mb-0 md:mb-2`}>
                                     {text}</p> 
                             </div>
                         </div>

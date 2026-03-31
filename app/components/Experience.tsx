@@ -17,7 +17,7 @@ export default function Btn({ title, name, date}: ExpProps) {
         </div>
             
         <div className="">
-            <p className={`${plus.className} text-sm md:text-lg text-left font-normal`}>
+            <p className={`${plus.className} text-sm md:text-lg lg:text-lg 2xl:text-2xl text-left font-normal`}>
             {date}</p>
         </div>
     </div> 

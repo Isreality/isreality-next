@@ -12,7 +12,7 @@ export default function Card({ header, text, image, link }: CardProps) {
   return (
     <div className="card bg-black px-2 py-2 md:py-2 rounded-md overflow-hidden">
                 <Link href={link} target="_blank">
-                    <img className='h-50 md:h-100 w-full object-cover hover:scale-105 rounded-lg' src={image} alt=""></img>
+                    <img className='h-50 md:h-100 lg:h-100 2xl:h-200 w-full object-cover hover:scale-105 rounded-lg' src={image} alt=""></img>
                         <div className="flex flex-row justify-between items-center px-0 md:px-2 py-4 md:py-6">
                             <div className="uppercase">
                                     <p className="text-[#646464] text-justify md:text-justify text-lg md:text-2xl font-bold mb-0 md:mb-2">{text}</p>
