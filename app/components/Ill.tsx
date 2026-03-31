@@ -14,7 +14,7 @@ export default async function Ill() {
   return (
     <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
       {imagePaths.map((src) => (
-             <img key={src} src={src} className="image w-full sm:h-96 lg:h-72 object-cover cursor-pointer" alt={`Image ${src}`} />
+             <img key={src} src={src} className="image w-full h-full md:h-96 lg:h-72 2xl:h-150 object-cover cursor-pointer" alt={`Image ${src}`} />
          ))}
     </div>
   );

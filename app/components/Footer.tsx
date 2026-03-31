@@ -38,7 +38,7 @@ export default function Footer() {
         </div>
 
         <div className="">
-            <p className=" text-[130px] md:text-[230px] lg:text-[450px] text-[#1f1f1f] font-bold overflow-hidden">ISREALITY</p>
+            <p className=" text-[130px] md:text-[230px] lg:text-[450px] 2xl:text-[750px] text-[#1f1f1f] font-bold overflow-hidden">ISREALITY</p>
         </div>
     </div>
   )
