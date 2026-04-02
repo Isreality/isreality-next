@@ -24,13 +24,13 @@ export default function Home() {
 
             {/* Contents */}
             <div className=" flex flex-col md:flex-col lg:flex-row items-center mt-0 md:mt-0 lg:-mt-30">
-              <div className="flex flex-col items-center md:items-center lg:items-start w-full md:w-full lg:w-[60%] px-4 md:px-20 mt-30 gap-0">
+              <div className="flex flex-col items-center md:items-center lg:items-start w-full md:w-full lg:w-[60%] 2xl:w-[65%] px-4 md:px-20 mt-30 gap-0">
                 <Fade direction="up" triggerOnce cascade damping={0.1}>
-                  <h2 className="text-black text-center md:text-center lg:text-left font-black text-6xl md:text-8xl lg:text-9xl mt-0 md:mt-8 lg:mt-0">
+                  <h2 className="text-black text-center md:text-center lg:text-left font-black text-6xl md:text-8xl lg:text-9xl 2xl:text-[300px] mt-0 md:mt-8 lg:mt-0">
                     ISRAEL AGBAJE
                   </h2><br/>
 
-                  <h1 className={`${plus.className} text-black text-base md:text-lg lg:text-xl text-center md:text-center lg:text-left w-full font-regular`}>
+                  <h1 className={`${plus.className} text-black text-base md:text-lg lg:text-xl 2xl:text-3xl text-center md:text-center lg:text-left w-full md:w-full lg:w-full 2xl:w-[80%] font-regular`}>
                     A Brand Designer, Design Engineer and Illustrator, dedicated to crafting beautiful and functional digital experiences.
                   </h1><br/>
                   
@@ -62,12 +62,12 @@ export default function Home() {
               </div>
 
               {/* Image desktop */}
-              <div className="hidden md:hidden lg:flex -z-10">
+              <div className="hidden md:hidden lg:flex 2xl:flex -z-10">
                 <Fade direction="right" triggerOnce><Image src="/img/izzy_hero.png" alt="Dante" loading="eager" className="" width={1000} height={1000} /></Fade>
               </div>
               
 
-              {/* Image tablet and mobile */}
+              {/* Image mobile */}
               <div className="lg:hidden">
                 <Fade direction="up" triggerOnce><Image src="/img/isreality.png" alt="Dante" className="" width={500} height={500} /></Fade>
               </div>
@@ -79,7 +79,7 @@ export default function Home() {
           {/* <BackToTop/> */}
         </div>
         
-        {/* SERVICES */}
+        {/* MY EXPERTISE */}
         <div className="bg-white w-full px-4 md:px-8 lg:px-24 py-6 md:py-16 lg:py-16">
           <Fade direction="up" triggerOnce>
             <h2 className="uppercase mb-4 md:mb-16 text-black text-center md:text-center lg:text-center font-black text-3xl md:text-6xl lg:text-7xl">
@@ -93,67 +93,63 @@ export default function Home() {
             <Fade direction="up" triggerOnce cascade damping={0.3}>
               {/* UI/UX */}
               <Link href="/works" className="bg-black flex flex-col md:flex-col lg:flex-row rounded-lg gap-2 md:gap-1 px-4 md:px-8 py-8 md:py-16 border-b-2 items-center justify-between">
-                    <div className="flex flex-row uppercase text-white text-3xl md:text-5xl w-full md:w-full lg:w-[90%] mb-2 md:mb-2 lg:mb-0">
-                        <h2 className="font-black">01.</h2>    
-                        <p className="font-light">UI/UX Design</p>
-                    </div>
+                <h2 className="uppercase text-white text-left w-full md:w-full lg:w-[90%] 2xl:w-[40%] font-light text-3xl md:text-5xl mb-2 md:mb-2 lg:mb-0">
+                  <b className="font-black">01.</b>UI/UX Design
+                </h2>
 
-                    <div className="">
-                      <p className={`${plus.className} text-sm md:text-lg text-white w-full md:w-full lg:w-[80%] font-light`}>
-                        Focus on creating visually appealing interfaces that delights users through wireframing, prototyping, and user testing to deliver a seamless user experience.</p>
-                    </div>
+                <div className="">
+                  <p className={`${plus.className} text-sm md:text-lg lg:text-lg 2xl:text-2xl text-white w-full md:w-full lg:w-[80%] font-light`}>
+                    Focus on creating visually appealing interfaces that delights users through wireframing, prototyping, and user testing to deliver a seamless user experience.</p>
+                </div>
 
-                    <div className="hidden md:hidden lg:flex bg-white p-2 rounded-full">
-                      <Icon className="text-black rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="45" height="45" />
-                    </div>  
+                <div className="hidden md:hidden lg:flex bg-white p-2 rounded-full">
+                  <Icon className="text-black rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="45" height="45" />
+                </div>  
               </Link>
 
               {/* Web */}
               <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-4 md:px-8 py-6 md:py-16 border-b-2 items-center justify-between">
-                    <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-full mb-2 md:mb-2 lg:mb-0">
-                        <h2 className="font-black">02.</h2>    
-                        <p className="font-light">WEB Development</p>
-                    </div>
+                <h2 className="uppercase text-black text-left w-full md:w-full lg:w-full 2xl:w-[44%] font-light text-3xl md:text-5xl mb-2 md:mb-2 lg:mb-0">
+                  <b className="font-black">02.</b>Web Development
+                </h2>
 
-                    <div className="">
-                      <p className={`${plus.className} text-sm md:text-lg text-black w-full md:w-full lg:w-[80%] font-regular`}>Create visually stunning and user-friendly websites and responsive web applications using modern technologies like HTML, CSS, JavaScript(React & Next Js) and Wordpress.</p>
-                    </div>
+                <div className="">
+                  <p className={`${plus.className} text-sm md:text-lg lg:text-lg 2xl:text-2xl text-black w-full md:w-full lg:w-[80%] 2xl:w-[80%] font-regular`}>Create visually stunning and user-friendly websites and responsive web applications using modern technologies like HTML, CSS, JavaScript(React & Next Js) and Wordpress.</p>
+                </div>
 
-                    <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
-                      <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="45" height="45" />
-                    </div>  
+                <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
+                  <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="45" height="45" />
+                </div>  
               </Link>
 
               {/* Brand Design */}
               <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-6 md:px-8 py-4 md:py-16 border-b-2 items-center justify-between">
-                    <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-[90%] mb-2 md:mb-2 lg:mb-0">
-                        <h2 className="font-black">03.</h2>    
-                        <p className="font-light">Brand Design</p>
-                    </div>
+                <h2 className="uppercase text-black text-left w-full md:w-full lg:w-[85%] 2xl:w-[38%] font-light text-3xl md:text-5xl mb-2 md:mb-2 lg:mb-0">
+                  <b className="font-black">03.</b>Brand Design
+                </h2>
 
-                    <div className="">
-                      <p className={`${plus.className} text-sm md:text-lg text-black w-full md:w-full lg:w-[80%] font-regular`}>Design unique logos and graphics that reflect the essence of your brand, ensuring it maintains a visually appealing image across all digital touchpoints.</p>
-                    </div>
+                <div className="">
+                  <p className={`${plus.className} text-sm md:text-lg lg:text-lg 2xl:text-2xl text-black w-full md:w-full lg:w-[80%] 2xl:w-[80%] font-regular`}>Design unique logos and graphics that reflect the essence of your brand, ensuring it maintains a visually appealing image across all digital touchpoints.</p>
+                </div>
 
-                    <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
-                      <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="45" height="45" />
-                    </div>  
+                <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
+                  <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="45" height="45" />
+                </div>  
               </Link>
 
               {/* Illustration */}
               <Link href="/works" className="bg-white hover:bg-[#fafafa] flex flex-col md:flex-col lg:flex-row gap-2 md:gap-1 px-4 md:px-8 py-6 md:py-16 items-center justify-between">
-                    <div className="flex flex-row uppercase text-black text-3xl md:text-5xl w-full md:w-full lg:w-full mb-2 md:mb-2 lg:mb-0">
-                        <h2 className="font-black">04.</h2>    
-                        <p className="font-light">Illustration</p>
-                    </div>
+                <h2 className="uppercase text-black text-left w-full md:w-full lg:w-[90%] 2xl:w-[40%] font-light text-3xl md:text-5xl mb-2 md:mb-2 lg:mb-0">
+                  <b className="font-black">03.</b>Illustration
+                </h2>
 
-                    <div className="">
-                      <p className={`${plus.className} text-sm md:text-lg text-black w-full md:w-full lg:w-[80%] font-regular`}>Whether it’s digital artwork, character design, or icons, I create visuals that enhance storytelling and branding, bringing creativity and originality to every project.</p>
-                    </div>
+                <div className="">
+                  <p className={`${plus.className} text-sm md:text-lg lg:text-lg 2xl:text-2xl text-black w-full md:w-full lg:w-[80%] 2xl:w-[80%] font-regular`}>Whether it’s digital artwork, character design, or icons, I create visuals that enhance storytelling and branding, bringing creativity and originality to every project.</p>
+                </div>
 
-                    <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
-                      <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="45" height="45" />
-                    </div>  
+                <div className="hidden md:hidden lg:flex bg-black p-2 rounded-full">
+                  <Icon className="text-white rotate-45 hover:rotate-90 cursor-pointer" icon="prime:arrow-up" width="45" height="45" />
+                </div>  
               </Link>
             </Fade>
           </div>  
