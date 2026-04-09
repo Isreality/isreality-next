@@ -29,7 +29,7 @@ export default function Footer() {
                         <p className="text-white text-2xl md:text-3xl font-normal uppercase">X</p>
                     </Link>
 
-                    <Link href="https://www.linkedin.com/in/agbajeisrael" target="_blank">
+                    <Link href="https://www.linkedin.com/in/agbaje-israel" target="_blank">
                         {/* <Icon icon="ri:linkedin-fill" className="text-white" width="40" height="40" /> */}
                         <p className="text-white text-2xl md:text-3xl font-normal uppercase">Linkedin</p>
                     </Link>
