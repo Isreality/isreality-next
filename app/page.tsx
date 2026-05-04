@@ -189,7 +189,7 @@ export default function Home() {
           <Fade triggerOnce>
             <div className="flex flex-col md:flex-col lg:flex-row items-center justify-between">
               <h2 className="uppercase mb-6 md:mb-16 text-white text-center md:text-center lg:text-left font-black text-3xl md:text-6xl lg:text-7xl">
-              <b className="text-[#646464]">Review from our</b> clients
+              <b className="text-[#646464]">Review from</b> clients & team members
               </h2>
 
               <div className="mb-4 md:mb-16">
