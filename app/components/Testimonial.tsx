@@ -15,8 +15,8 @@ export default function Testimonial({ name, role, text, image }: CardProps) {
         <div className="flex justify-start items-center gap-3 mb-2 md:mb-4">
             <img className='w-10 h-10 md:h-20 md:w-20 rounded-full object-cover' src={image} alt=""></img>
             <div className="grid justify-items-start">
-                <p className="uppercase text-white text-left text-xl md:text-4xl font-bold">{name}</p>
-                <p className={`${plus.className} font-normal text-sm md:text-xl text-white`}>{role}</p> 
+                <p className="uppercase text-white text-left text-xl md:text-3xl font-bold">{name}</p>
+                <p className={`${plus.className} font-normal text-sm md:text-lg text-white`}>{role}</p> 
             </div>                    
         </div>
         

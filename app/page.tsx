@@ -175,7 +175,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
               <Fade triggerOnce>
-                <Card header="Ounje Ibile" text="Brand Design" image="/img/ounje.png" link={'https://www.linkedin.com/posts/agbajeisrael_brand-branddesign-graphics-ugcPost-7404529703950110723-jgwt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC4IOqQBIGL_AWcRN3j9H3m2L1jeyMmhohk'}/>
+                <Card header="Ounje Ibile" text="Brand Design" image="/img/brand_img.png" link={'https://www.behance.net/gallery/248111821/Ounje-Ibile'}/>
                 <Card header="Ankra" text="Web Development" image="/img/ankra.png" link={'https://ankra.vercel.app/'}/>
                 <Card header="iGuard" text="UI/UX Design" image="/img/ig.png" link={'https://www.behance.net/gallery/224472665/iGuard'}/>
                 <Card header="Illustration" text="Illustration" image="/img/kungirl.jpg" link={'/works'}/>
@@ -202,17 +202,20 @@ export default function Home() {
                 showcasing not only technical expertise but also a keen aesthetic eye. Each collaboration with him was a seamless experience, consistently
                 delivering visually stunning and user-friendly interfaces. I highly recommend his services to anyone seeking a talented and reliable UI/UX professional"'/>
                                     
-              <Testimonial image=".." name="Olatunde Samuel" role="LightUp Software Ltd" text='"Israel is very good at what he does. His work ethic is highly commendable and his commitment
-                to satisfy his clients is dependable. This makes working with him a good choice always"'/>
+              <Testimonial image="/img/tobi.jpeg" name="Taiwo Oluwatobiloba" role="Mobile App Developer (Flutter)" text='"Israel is not just a “make it pretty” designer. He thinks through the user flow, cuts what isn’t needed, and delivers designs that developers actually enjoy building from. His Figma files were organized, his handoff was seamless, and he was always open to feedback.
+              If you want a UI/UX designer who can translate ideas into elegant, user-first products, Israel is the one. I’d absolutely work with him again."'/>
+
+                {/* <Testimonial image=".." name="Olatunde Samuel" role="LightUp Software Ltd" text='"Israel is very good at what he does. His work ethic is highly commendable and his commitment
+                to satisfy his clients is dependable. This makes working with him a good choice always"'/> */}
                                         
-                                    {/* <Testimonial name="Ogunsiji Damilare" role="CEO, Ogdams Technologies" text='"I had the pleasure of working with Israel on more than 3 projects. His proficiency in design is truly remarkable,
-                                    showcasing not only technical expertise but also a keen aesthetic eye. Each collaboration with him was a seamless experience, consistently
-                                    delivering visually stunning and user-friendly interfaces. I highly recommend his services to anyone seeking a talented and reliable UI/UX professional"'/> */}
-                                    
-                                    {/* <Testimonial name="Ogunsiji Damilare" role="CEO, Ogdams Technologies" text='"I had the pleasure of working with Israel on more than 3 projects. His proficiency in design is truly remarkable,
-                                    showcasing not only technical expertise but also a keen aesthetic eye. Each collaboration with him was a seamless experience, consistently
-                                    delivering visually stunning and user-friendly interfaces. I highly recommend his services to anyone seeking a talented and reliable UI/UX professional"'/> */}
-                            </div>
+                    {/* <Testimonial name="Ogunsiji Damilare" role="CEO, Ogdams Technologies" text='"I had the pleasure of working with Israel on more than 3 projects. His proficiency in design is truly remarkable,
+                    showcasing not only technical expertise but also a keen aesthetic eye. Each collaboration with him was a seamless experience, consistently
+                    delivering visually stunning and user-friendly interfaces. I highly recommend his services to anyone seeking a talented and reliable UI/UX professional"'/> */}
+                    
+                    {/* <Testimonial name="Ogunsiji Damilare" role="CEO, Ogdams Technologies" text='"I had the pleasure of working with Israel on more than 3 projects. His proficiency in design is truly remarkable,
+                    showcasing not only technical expertise but also a keen aesthetic eye. Each collaboration with him was a seamless experience, consistently
+                    delivering visually stunning and user-friendly interfaces. I highly recommend his services to anyone seeking a talented and reliable UI/UX professional"'/> */}
+            </div>
           </Fade>
         </div>
 
