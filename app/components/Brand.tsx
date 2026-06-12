@@ -4,6 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import Image from 'next/image';
 import { Fade } from "react-awesome-reveal";
+import Card from "./Card"
 import WorkCard from "./WorkCard"
 
 async function getImagePaths() {
@@ -21,7 +22,12 @@ export default async function Brand() {
         <Fade direction="up" triggerOnce cascade damping={0.1}>
             <WorkCard link={'https://www.behance.net/gallery/248111821/Ounje-Ibile'} header="Ounje Ibile" text="A Nigerian restaurant that brings authentic local dishes to everyone, cooked the original way and served with warmth." image="/img/brand_img.png"/>
         </Fade>
+
+        <Fade direction="up" triggerOnce cascade damping={0.1}>
+            <WorkCard link={'/'} header="Afri Smash(COming Soon)" text="An African tennis tournament" image="/img/af billboard.png"/>
+        </Fade>
       </div>
+      
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-1">
         {imagePaths.map((src) => (
