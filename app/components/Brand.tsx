@@ -24,7 +24,7 @@ export default async function Brand() {
         </Fade>
 
         <Fade direction="up" triggerOnce cascade damping={0.1}>
-            <WorkCard link={'/'} header="Afri Smash(COming Soon)" text="An African tennis tournament" image="/img/af billboard.png"/>
+            <WorkCard link={'/works'} header="Afri Smash(COming Soon)" text="An African tennis tournament" image="/img/af billboard.png"/>
         </Fade>
       </div>
       
