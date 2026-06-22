@@ -24,7 +24,7 @@ export default async function Brand() {
         </Fade>
 
         <Fade direction="up" triggerOnce cascade damping={0.1}>
-            <WorkCard link={'/works'} header="Afri Smash(COming Soon)" text="An African tennis tournament" image="/img/af billboard.png"/>
+            <WorkCard link={'https://www.behance.net/gallery/249412591/AfriSmash'} header="Afri Smash" text="AfriSmash is a premier pan-African tennis tournament bringing together the continent's most talented players to compete, inspire, and celebrate the spirit of African tennis. " image="/img/af billboard.png"/>
         </Fade>
       </div>
       
